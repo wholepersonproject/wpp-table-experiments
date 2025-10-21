@@ -58,5 +58,5 @@ for _, row in main.iterrows():
     # Append row
     output.loc[len(output)] = new_row
 
-output.to_csv("data/wpp_table.csv", encoding="utf-8", index=False)
+output.to_csv("data/wpp_table.csv", encoding="utf-8-sig", index=False)
 print("Created successfully!")
