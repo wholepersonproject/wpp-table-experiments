@@ -58,5 +58,5 @@ if not missing_ids:
 else:
     print("\nMissing IDs and labels:")
     print(missing_df)
-    missing_df.to_csv("data/missing_ids_labels.csv", index=False)
+    missing_df.to_csv("output/missing_ids_labels.csv", index=False)
     print("Saved to data/missing_ids_labels.csv")
