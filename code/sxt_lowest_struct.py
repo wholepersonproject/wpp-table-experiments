@@ -12,8 +12,6 @@ def normalize(val):
     return val.strip()
 
 main["TimeScale_norm"] = main["TimeScale"].apply(normalize)
-main.columns = main.columns.str.strip()
-
 
 # mapping
 mapping = {
@@ -29,24 +27,31 @@ mapping = {
     "nan": ["nan"],
 }
 
+# find structure and cell label columns
 structure_label_cols = [c for c in main.columns if re.search(r"Structure/\d+/LABEL", c)]
 cell_label_cols = [c for c in main.columns if re.search(r"Cell/\d+/LABEL", c)]
 
-cols = (
-    ["Human Organ System", "Major Organs"]
-    + structure_label_cols
-    + cell_label_cols
-    + [
-        "<1 second",
-        "1s - 1min",
-        "1min - 1hr",
-        "1hr - 1day",
-        "1day - 1week",
-        "1 week - 1 year",
-        "1 year or longer",
-        "nan",
-    ]
-)
+# compute lowest structure label per row
+def get_lowest_structure(row):
+    vals = [str(row[c]).strip() for c in structure_label_cols if pd.notna(row[c]) and str(row[c]).strip()]
+    return vals[-1] if vals else ""
+
+main["Lowest Structure"] = main.apply(get_lowest_structure, axis=1)
+
+# build output columns (no structure/cell cols now)
+cols = [
+    "Human Organ System",
+    "Major Organs",
+    "Lowest Structure",
+    "<1 second",
+    "1s - 1min",
+    "1min - 1hr",
+    "1hr - 1day",
+    "1day - 1week",
+    "1 week - 1 year",
+    "1 year or longer",
+    "nan",
+]
 
 output = pd.DataFrame(columns=cols)
 
@@ -59,20 +64,17 @@ for _, row in main.iterrows():
     new_row = {col: "" for col in cols}
     new_row["Human Organ System"] = system
     new_row["Major Organs"] = organ
+    new_row["Lowest Structure"] = row.get("Lowest Structure", "")
 
-    for c in structure_label_cols + cell_label_cols:
-        new_row[c] = row.get(c, "")
-
-    # for t in mapping.get(scale, []):
-    #     new_row[t] = process
+    # combine Function/4 with Process triple
     func4 = str(row.get("Function/4", "")).strip()
     combined_process = f"{func4}@{process}" if func4 and process else process or func4
 
     for t in mapping.get(scale, []):
-        new_row[t] = combined_process   
+        new_row[t] = combined_process
 
     output.loc[len(output)] = new_row
 
-output.to_csv("data/spacextime_table.csv", index=False, encoding="utf-8-sig")
+output.to_csv("data/sxt_loweststruct_table.csv", index=False, encoding="utf-8-sig")
 
-print("Created successfully!")
+print("Created successfully with Lowest Structure column only!")
