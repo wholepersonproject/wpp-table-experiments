@@ -59,44 +59,62 @@
 
 import pandas as pd
 
-df = pd.read_csv("./output/lowest_type.csv")
+# --- LOAD DATA ---
+df = pd.read_csv("./output/lowest_type_with_id.csv")
 
-#Temporary mapping not ideal
+# --- TEMPORARY MAPPING (space scale) ---
 scale_map = {
-    "organ": "10 cm",
+    "ORGAN": "10 cm",
+    "AS": "1 cm",
     "FTU": "100 µm",
     "CT": "10 µm",
     "B": "10 nm"
 }
-df["space_label"] = df["Lowest Type"].map(scale_map)
+df["Lowest Type"] = df["Lowest Type"].str.upper().fillna("UNKNOWN")
+df["space_label"] = df["Lowest Type"].map(scale_map).fillna("")
 
-# Melt all time columns into one
+# --- MELT TIME COLUMNS ---
+time_cols = [
+    "<1 second",
+    "1s - < 1min",
+    "1min - < 1hr",
+    "1hr - < 1day",
+    "1day - < 1week",
+    "1 week - < 1 year",
+    "1 year or longer",
+]
 melted = df.melt(
     id_vars=["Lowest Type", "space_label"],
+    value_vars=time_cols,
     var_name="Time Range",
     value_name="Value"
 )
 
-# Group duplicates: same Lowest Type + Time Range → combine all values
+# --- GROUP + COMBINE DUPLICATES ---
 grouped = (
     melted.groupby(["Time Range", "Lowest Type"])["Value"]
-    .apply(lambda x: "; ".join(x.dropna().astype(str).unique()))
+    .apply(lambda x: "; ".join(sorted(x.dropna().astype(str).unique())))
     .unstack(fill_value="")
 )
 
+# --- Ensure all known Lowest Type columns exist, even if empty ---
+type_order = ["ORGAN", "AS", "FTU", "CT", "B"]
+grouped = grouped.reindex(columns=type_order, fill_value="")
+
+# --- Reorder time ranges properly ---
 time_order = [
     "<1 second",
-    "1s - 1min",
-    "1min - 1hr",
-    "1hr - 1day",
-    "1day - 1week",
-    "1 week - 1 year",
+    "1s - < 1min",
+    "1min - < 1hr",
+    "1hr - < 1day",
+    "1day - < 1week",
+    "1 week - < 1 year",
     "1 year or longer"
 ]
 grouped = grouped.reindex(time_order)
 
-# Save to CSV
+# --- SAVE OUTPUT ---
 output_path = "./output/temporal_spatial_table.csv"
 grouped.to_csv(output_path, index=True, encoding="utf-8-sig")
 
-print(f"Saved combined table to: {output_path}")
+print(f"aved combined table to: {output_path}")
