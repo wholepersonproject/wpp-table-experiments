@@ -3,7 +3,7 @@ import re
 import json
 
 # --- LOAD MAIN CSV ---
-main = pd.read_csv("data/Urinary-system_v1.0_DRAFT_250923 - urinary-system_v1.0_DRAFT.csv", header=11, encoding="utf-8-sig")
+main = pd.read_csv("data/Male-reproductive-system_v1.0_DRAFT - Sheet1.csv", header=11, encoding="utf-8-sig")
 main.columns = main.columns.str.strip()
 
 # --- LOAD STRUCTURE JSON ---
@@ -28,7 +28,8 @@ for section in ["anatomical_structures", "cell_types", "functional_tissue_units"
 def normalize(val):
     if pd.isna(val):
         return "nan"
-    val = str(val).lower().replace("–", "").replace("-", "").replace(" ", "")
+    val = str(val).lower()
+    val = re.sub(r"[–,\-\s]", "", val)
     return val.strip()
 
 main["TimeScale_norm"] = main["TimeScale"].apply(normalize)
@@ -148,6 +149,40 @@ cols = [
 
 output = pd.DataFrame(columns=cols)
 
+func_cols = [
+    c for c in main.columns
+    if re.search(r"^Function\s*/?\s*\d+$", c, re.IGNORECASE)
+]
+func_cols.sort(key=lambda c: int(re.search(r"\d+", c).group()))
+
+
+def get_lowest_function(row):
+    """
+    Finds the deepest non-empty Function/x value.
+    Works even if some intermediate levels like 'Function/5' are empty.
+    """
+    lowest_func = ""
+
+    # Gather all Function/x columns dynamically (sorted by numeric index)
+    function_cols = []
+    for col in row.index:
+        match = re.match(r"Function/(\d+)$", col.strip())
+        if match:
+            idx = int(match.group(1))
+            function_cols.append((idx, col))
+
+    # Sort by numeric index
+    function_cols.sort(key=lambda x: x[0])
+
+    # Iterate from top → bottom (you could reverse for bottom-first)
+    for _, col in function_cols:
+        val = str(row.get(col, "")).strip()
+        if pd.notna(val) and val.lower() != "nan" and val != "":
+            lowest_func = val
+
+    return lowest_func if lowest_func else "Unknown"
+
+
 for _, row in main.iterrows():
     system = row.get("Function/1", "")
     organ = row.get("Structure/1", "")
@@ -161,8 +196,8 @@ for _, row in main.iterrows():
     new_row["Lowest ID"] = row.get("Lowest ID", "")
     new_row["Lowest Type"] = row.get("Lowest Type", "")
 
-    func4 = str(row.get("Function/4", "")).strip()
-    combined_process = f"{func4}@{process}" if func4 and process else process or func4
+    lowest_func = get_lowest_function(row)
+    combined_process = f"{lowest_func}@{process}" if lowest_func != "Unknown" and process else process or lowest_func
 
     for t in mapping.get(scale, []):
         new_row[t] = combined_process
@@ -170,5 +205,10 @@ for _, row in main.iterrows():
     output.loc[len(output)] = new_row
 
 # --- SAVE OUTPUT ---
-output.to_csv("output/lowest_type_with_id.csv", index=False, encoding="utf-8-sig")
+output.to_csv("data/temporal_spatial_data/male_reproductive_lowest_type_with_id.csv", index=False, encoding="utf-8-sig")
 print("Created successfully with Lowest Structure + ID + Type (matched by ID)!")
+# print(main[["Function/1", "Function/2", "Function/3", "Function/4", "Function/5"]].head(10))
+
+
+# print(main["TimeScale_norm"].value_counts().head(20))
+# print("Detected function columns:", func_cols)

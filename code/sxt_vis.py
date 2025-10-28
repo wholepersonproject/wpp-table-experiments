@@ -114,7 +114,7 @@ time_order = [
 grouped = grouped.reindex(time_order)
 
 # --- SAVE OUTPUT ---
-output_path = "./output/temporal_spatial_table.csv"
+output_path = "./output/temporal_spatial_output/urinary_temporal_spatial_table.csv"
 grouped.to_csv(output_path, index=True, encoding="utf-8-sig")
 
 print(f"aved combined table to: {output_path}")
