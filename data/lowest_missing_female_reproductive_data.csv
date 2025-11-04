@@ -1,90 +1,47 @@
-﻿Label,ID,Found_in_ASCTB
-dehydroepiandrosterone secretion,GO:0035942,Not found
-dehydroepiandrosterone secretion,GO:0035942,Not found
-paraventricular nucleus of hypothalamus,GO:0005183,Not found
-paraventricular nucleus of hypothalamus,GO:0005183,Not found
-paraventricular nucleus of hypothalamus,GO:0005183,Not found
-adenohypophysis,GO:0032275,Not found
-adenohypophysis,GO:0032275,Not found
-adenohypophysis,GO:0032275,Not found
-prolactin secretion,GO:0070459,Not found
-follicle-stimulating hormone secretion,GO:0046884,Not found
-ovarian follicle,GO:0035938,Not found
-ovarian follicle,GO:0035938,Not found
-ovarian follicle,GO:0035938,Not found
-ovarian follicle,GO:0035938,Not found
-ovarian follicle,GO:0035938,Not found
-ovarian follicle,GO:0035938,Not found
-corpus luteum,GO:0042701,Not found
-corpus luteum,GO:0042701,Not found
-corpus luteum,GO:0042701,Not found
-corpus luteum,GO:0042701,Not found
-corpus luteum,GO:0042701,Not found
-ovarian follicle,GO:0032334,Not found
-ovarian follicle,GO:0032333,Not found
-androstenedione secretion,GO:0035941,Not found
-androstenedione secretion,GO:0035941,Not found
-white adipose tissue,GO:0035935,Not found
-nan,GO:0035935,Not found
-nan,GO:0035935,Not found
-nan,GO:0007565,Not found
-progesterone secretion,GO:0042701,Not found
-estradiol secretion,GO:0035938,Not found
-mammary gland connective tissue,GO:0046543,Not found
-white adipose tissue,GO:0044850,Not found
-ovarian follicle development,GO:0001541,Not found
-ovarian follicle development,GO:0001541,Not found
-ovarian follicle development,GO:0001541,Not found
-ovulation,GO:0030728,Not found
-ovulation,GO:0030728,Not found
-luteinization,GO:0001553,Not found
-luteinization,GO:0001553,Not found
-luteinization,GO:0001553,Not found
-menstruation,GO:0042703,Not found
-ovarian follicle,GO:0044850,Not found
-nan,GO:0044850,Not found
-oocyte maturation,GO:0001556,Not found
-primary ovarian follicle growth involved in primary follicle stage,GO:0043930,Not found
-primary ovarian follicle growth involved in primary follicle stage,GO:0043930,Not found
-follicular fluid formation in ovarian follicle antrum,GO:0001548,Not found
-innervation,GO:0060384,Not found
-innervation,GO:0060384,Not found
-innervation,GO:0060384,Not found
-innervation,GO:0060384,Not found
-nan,GO:0019953,Not found
-innervation,GO:0060384,Not found
-"musculoskeletal movement, spinal reflex action",GO:0050883,Not found
-"musculoskeletal movement, spinal reflex action",GO:0050883,Not found
-nan,GO:0019953,Not found
-uterine smooth muscle contraction,GO:0070471,Not found
-oxytocin production,GO:0036162,Not found
-neurohypophysis,GO:0042697,Not found
-adenohypophysis,GO:0042697,Not found
-ovulation,GO:0030728,Not found
-ovulation,GO:0030728,Not found
-fertilization,GO:0009566,Not found
-morula formation,GO:0140001,Not found
-embryo implantation,GO:0007566,Not found
-decidualization,GO:0046697,Not found
-nan,GO:0007565,Not found
-nan,GO:0007565,Not found
-embryo implantation,GO:0007566,Not found
-embryo implantation,GO:0007566,Not found
-placenta development,GO:0001890,Not found
-blood plasma,GO:0007565,Not found
-heart left ventricle,GO:0007565,Not found
-alveolus of lung,GO:0007565,Not found
-parturition,GO:0007567,Not found
-parturition,GO:0007567,Not found
-parturition,GO:0007567,Not found
-uterine smooth muscle contraction,GO:0070471,Not found
-parturition,GO:0007567,Not found
-vasoconstriction,GO:0042310,Not found
-parturition,GO:0007567,Not found
-mammary gland,GO:0007595,Not found
-prolactin secretion,GO:0070459,Not found
-"musculoskeletal movement, spinal reflex action",GO:0050883,Not found
-mammary gland,GO:0007595,Not found
-reflex,GO:0060004,Not found
-mammary gland smooth muscle,GO:0007595,Not found
-nipple,GO:0007595,Not found
+﻿Label,ID,Level_Type,Found_in_ASCTB
+zona reticularis of adrenal gland,UBERON:0002055,Structure,Not found
+parvocellular neurosecretory cell,CL:1001505,Cell,Not found
+adenohypophysis,UBERON:0002196,Structure,Not found
+granulosa cell,CL:0000501,Cell,Not found
+luteal cel,CL:0000175,Cell,Found
+white adipocyte,CL:0000448,Cell,Not found
+skeletal muscle fiber,CL:0008002,Cell,Not found
+fibroblast of dermis,CL:0002551,Cell,Not found
+placental villous trophoblast,CL:2000060,Cell,Not found
+mammary gland connective tissue,UBERON:0003584,Structure,Not found
+white adipose tissue,UBERON:0001347,Structure,Not found
+ovarian follicle,UBERON:0001305,Structure,Found
+corpus luteum,UBERON:0002512,Structure,Found
+endometrium,UBERON:0001295,Structure,Found
+ovary,UBERON:0000992,Structure,Found
+oocyte,CL:0000023,Cell,Not found
+theca cell,CL:0000503,Cell,Found
+tertiary ovarian follicle,UBERON:0000037,Structure,Not found
+sacral nerve plexus,UBERON:0034986,Structure,Found
+corpus cavernosum clitoridis,UBERON:0006608,Structure,Not found
+dorsal artery of clitoris,UBERON:0008323,Structure,Found
+deep dorsal vein of clitoris,UBERON:0006690,Structure,Found
+major vestibular gland,UBERON:0000460,Structure,Not found
+skeletal muscle tissue,UBERON:0001134,Structure,Not found
+uterine cervix,UBERON:0000002,Structure,Found
+uterus,UBERON: 0000995,Structure,Not found
+neurohypophysis,UBERON:0002198,Structure,Not found
+fimbriae of fallopian tube,UBERON:8410010,Structure,Found
+oviduct epithelium,UBERON:0004804,Structure,Found
+ampulla of fallopian tube,UBERON:0012648,Structure,Found
+morula,UBERON:0000085,Structure,Not found
+stromal cell of endometrium,CL:0002255,Cell,Found
+trophoblast,UBERON:0000088,Structure,Not found
+chorionic trophoblast cell,CL:0011101,Cell,Not found
+erythrocyte,CL:0000232,Cell,Found
+blood plasma,UBERON:0001969,Structure,Not found
+heart left ventricle,UBERON:0002084,Structure,Found
+alveolus of lung,UBERON:0002299,Structure,Found
+myometrium,UBERON:0001296,Structure,Found
+uterine spiral artery,UBERON:0015171,Structure,Found
+vagina,UBERON:0000996,Structure,Not found
+lactocyte,CL:0002325,Cell,Not found
+nipple,UBERON:0002030,Structure,Not found
+median eminence of neurohypophysis,UBERON:0002197,Structure,Not found
+mammary gland,UBERON:0001911,Structure,Found
+mammary gland smooth muscle,UBERON:0004235,Structure,Not found

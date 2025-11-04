@@ -1,108 +1,39 @@
-﻿Label,ID,Found_in_ASCTB
-kidney collecting duct epithelium,UBERON:0014388,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-renal absorption,GO:0070293,Not found
-renal absorption,GO:0070293,Not found
-renal absorption,GO:0070293,Not found
-regulation of ammonia assimilation cycle,GO:2001248,Not found
-regulation of ammonia assimilation cycle,GO:2001248,Not found
-renal absorption,GO:0070293,Not found
-micturition,GO:0060073,Not found
-micturition,GO:0060073,Not found
-micturition,GO:0060073,Not found
-micturition,GO:0060073,Not found
-micturition,GO:0060073,Not found
-renal response to blood flow involved in circulatory renin-angiotensin regulation of systemic arterial blood pressure,GO:0001999,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-kidney collecting duct epithelium,GO:0042592,Not found
-nephron,GO:0042592,Not found
-distal convoluted tubule,UBERON:0001292,Found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-renal sodium ion absorption,GO:0070294,Not found
-renal potassium excretion,GO:0036359,Not found
-renal cortex tubule,GO:0042592,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-thick ascending limb of loop of Henle,UBERON:0001291,Found
-nephron,GO:0042592,Not found
-renal cortex tubule,UBERON:0006853,Not found
-renal cortex interstitium,UBERON:0005270,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-nephrocyte filtration,GO:0097206,Not found
-negative regulation of glomerular filtration,GO:0003105,Not found
-negative regulation of glomerular filtration,GO:0003105,Not found
-negative regulation of glomerular filtration,GO:0003105,Not found
-glomerular filtration,GO:0003094,Not found
-glomerular filtration,GO:0003094,Not found
-glomerular filtration,GO:0003094,Not found
-renal cortex tubule,UBERON:0006853,Not found
-peritubular capillary plexus of kidney,UBERON:0035758,Not found
-renal glomerulus,GO:0042592,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-distal convoluted tubule,UBERON:0001292,Found
-renal cortex tubule,UBERON:0006853,Not found
-nan,GO:0008152,Not found
-lymph vasculature,UBERON:0004536,Found
-urinary bladder detrusor smooth muscle,UBERON_0000381,Not found
-renal cortex tubule,UBERON:0006853,Not found
-renal cortex tubule,UBERON:0006853,Not found
-renal cortex tubule,UBERON:0006853,Not found
-renal cortex tubule,GO:0042592,Not found
-proximal straight tubule,UBERON:0001290,Found
-renal cortex tubule,UBERON:0006853,Not found
-renal cortex tubule,GO:0042592,Not found
-peritubular capillary plexus of kidney,UBERON:0035758,Not found
-renal cortex tubule,GO:0042592,Not found
-Loop of Henle,UBERON:0001288,Not found
-descending thin limb,UBERON:0005096,Found
-thick ascending limb of loop of Henle,UBERON:0001291,Found
-renal cortex tubule,UBERON:0006853,Not found
-thick ascending limb of loop of Henle,UBERON:0001291,Found
-thick ascending limb of loop of Henle,UBERON:0001291,Found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-nephron,GO:0042592,Not found
-vasa cecta,UBERON:0004726,Found
-renal efferent arteriole,UBERON:0004640,Found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-urinary bladder smooth muscle,GO:0050896,Not found
-kidney arterial blood vessel,GO:0042592,Not found
-kidney vasculature,GO:0042592,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-external urethral sphincter,GO:0050896,Not found
-renal water homeostasis,GO:0003091,Not found
-descending thin limb,UBERON:0005096,Found
-renal cortex peritubular capillary,UBERON:0006851,Not found
-regulation of blood volume by renal aldosterone,GO:0002017,Not found
-regulation of blood volume by renal aldosterone,GO:0002017,Not found
-renal cortex tubule,UBERON:0006853,Not found
-nephron tubule,UBERON:0001231,Found
-renal water absorption,GO:0070295,Not found
-renal water homeostasis,GO:0003091,Not found
-renal water homeostasis,GO:0003091,Not found
-renal water homeostasis,GO:0003091,Not found
-renal water homeostasis,GO:0003091,Not found
-renal water homeostasis,GO:0003091,Not found
-renal water homeostasis,GO:0003091,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-renal water homeostasis,GO:0003091,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-renal water homeostasis,GO:0003091,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-kidney collecting duct epithelium,UBERON:0014388,Not found
-distal convoluted tubule,UBERON:0001292,Found
-proximal convoluted tubule,UBERON:0001287,Not found
-proximal convoluted tubule,UBERON:0001287,Not found
-proximal convoluted tubule,UBERON:0001287,Not found
-proximal convoluted tubule,UBERON:0001287,Not found
-angiotensin-activated signaling pathway,GO:0038166,Not found
-angiotensin-activated signaling pathway,GO:0038166,Not found
-ureteric peristalsis,GO:0072105,Not found
-regulation of urine volume,GO:0035809,Not found
-renal water homeostasis,GO:0003091,Not found
-renal water homeostasis,GO:0003091,Not found
-micturition,GO:0060073,Not found
-renal water homeostasis,GO:0003091,Not found
-renal water homeostasis,GO:0003091,Not found
-renal water homeostasis,GO:0003091,Not found
+﻿Label,ID,Level_Type,Found_in_ASCTB
+kidney epithelial cell,CL:0002518,Cell,Not found
+kidney collecting duct epithelial cell,CL:1000454,Cell,Found
+kidney proximal straight tubule epithelial cell,CL:1000839,Cell,Not found
+urinary bladder detrusor smooth muscle,UBERON_0000381,Structure,Not found
+neck of urinary bladder,UBERON_0001258,Structure,Not found
+sympathetic nervous system,UBERON:0000013,Structure,Not found
+renal afferent arteriole,UBERON:0004639,Structure,Found
+epithelial cell of distal tubule,CL:0002305,Cell,Not found
+kidney loop of Henle epithelial cell,CL:1000909,Cell,Not found
+renal cortex tubule,UBERON:0006853,Structure,Not found
+renal cortex interstitium,UBERON:0005270,Structure,Not found
+kidney collecting duct epithelium,UBERON:0014388,Structure,Not found
+podocyte,CL:0000653,Cell,Found
+renal glomerulus,UBERON:0000074,Structure,Found
+renal cortex peritubular capillary,UBERON:0006851,Structure,Not found
+renal efferent arteriole,UBERON:0004640,Structure,Found
+kidney capillary endothelial cell,CL:1000892,Cell,Not found
+kidney afferent arteriole cell,CL:1001006,Cell,Not found
+kidney collecting duct principal cell,CL:1001431,Cell,Found
+distal convoluted tubule,UBERON:0001292,Structure,Found
+lymph vasculature,UBERON:0004536,Structure,Found
+brush border epithelial cell,CL:0000239,Cell,Not found
+kidney proximal convoluted tubule epithelial cell,CL:1000838,Cell,Not found
+Loop of Henle,UBERON:0001288,Structure,Not found
+descending thin limb,UBERON:0005096,Structure,Found
+thick ascending limb of loop of Henle,UBERON:0001291,Structure,Found
+nephron,UBERON:0001285,Structure,Found
+kidney efferent arteriole endothelial cell,CL:1001099,Cell,Found
+urinary bladder smooth muscle,UBERON_0004228,Structure,Not found
+kidney arterial blood vessel,UBERON:0003644,Structure,Not found
+external urethral sphincter,UBERON:0004919,Structure,Not found
+glomerular capillary endothelial cell,CL:1001005,Cell,Found
+peritubular capillary endothelial cell,CL:1001033,Cell,Found
+epithelial cell of proximal tubule,CL:0002306,Cell,Found
+kidney afferent arteriole endothelial cell,CL:1001096,Cell,Found
+ureter,UBERON:0000056,Structure,Found
+urinary bladder,UBERON:0001255,Structure,Found
+urethra,UBERON:0000057,Structure,Not found
