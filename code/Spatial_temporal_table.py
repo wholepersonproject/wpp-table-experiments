@@ -1,7 +1,7 @@
 import pandas as pd
 
 # --- LOAD FINAL CSV ---
-df = pd.read_csv("data/temporal_spatial_data/male_reproductive_lowest_type_from_asctb_matched_v3.csv", encoding="utf-8-sig")
+df = pd.read_csv("data/temporal_spatial_data/urinary_system_lowest_type_from_asctb_matched_v3.csv", encoding="utf-8-sig")
 
 # --- DEFINE TIME COLUMNS ---
 time_cols = [
@@ -41,7 +41,8 @@ pivot = grouped.pivot(
 # --- ENSURE ALL TIME RANGES APPEAR ---
 # Reindex so even missing ranges show up as blank rows
 pivot = pivot.set_index("Time Range").reindex(time_cols).fillna("").reset_index()
-
+pivot["Time Range"] = pd.Categorical(pivot["Time Range"], categories=time_cols, ordered=True)
+pivot = pivot.sort_values("Time Range").reset_index(drop=True)
 # --- ENSURE COLUMN ORDER ---
 desired_types = ["AS", "FTU", "CT", "B", "Unknown"]
 for t in desired_types:
@@ -51,7 +52,7 @@ for t in desired_types:
 pivot = pivot[["Time Range"] + desired_types]
 
 # --- SAVE OUTPUT ---
-pivot.to_csv("output/temporal_spatial_output/male_reproductive_spatial_temporal_v2.csv", index=False, encoding="utf-8-sig")
+pivot.to_csv("output/temporal_spatial_output/urinary_system_spatial_temporal_v2.csv", index=False, encoding="utf-8-sig")
 
 print("Created summary table by Time Range × Type (all time ranges retained)!")
 print("Total rows:", len(pivot))
