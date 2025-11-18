@@ -19,6 +19,18 @@ Run in this sequence ->
 
 - Spatial_temporal_table.py (Final spatial temporal table)
 
+## Newly created tables using EffectorScale 
+
+Run - new_system.py
+
+Output - output/temporal_spatial_output/v3
+
+### Scatter Plots
+
+Run = code/3d_scatter_plot.py
+
+Output - output/3d_scatter_plots/
+
 ### Challenges
 
 Cannot find IDs of majority lower structures in asctb tables hence matched with the ones as lower as possible in hierarchy. Refer this code at code/lowest_missing.py

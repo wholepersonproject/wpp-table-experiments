@@ -28,7 +28,6 @@ TIME_MAPPING = {
     "continuous": ["continuous"], "variable": ["variable"],
 }
 
-# -------------------------------------------------------------------------
 # --- SPATIAL MAPPING (KEYS ARE NOW NORMALIZED, LOWERCASE, NO SPACES/PUNCTUATION) ---
 # The normalize_spatial function will convert the input string to match these keys.
 SPATIAL_MAPPING = {
@@ -46,11 +45,40 @@ SPATIAL_MAPPING = {
 }
 # -------------------------------------------------------------------------
 
+ftu_ids = {
+    "UBERON:0004203",
+    "UBERON:0001289",
+    "UBERON:0004205",
+    "UBERON:0004193",
+    "UBERON:0001285",
+    "UBERON:0004204",
+    "UBERON:0001229",
+    "UBERON:0001291",
+    "UBERON:0004647",
+    "UBERON:0002299",
+    "UBERON:8410043",
+    "UBERON:0000006",
+    "UBERON:0001263",
+    "UBERON:0014725",
+    "UBERON:0004179",
+    "UBERON:0001983",
+    "UBERON:0000412",
+    "UBERON:0002073",
+    "UBERON:0013487",
+    "UBERON:0001213",
+    "UBERON:0001250",
+    "UBERON:0001959",
+    "UBERON:0002125",
+    "UBERON:0001831",
+    "UBERON:0001832",
+    "UBERON:0001736",
+}
+
 # --- DATA LOADING AND INITIAL CLEANING ---
 try:
     main = pd.read_csv(
         MAIN_CSV_PATH,
-        header=11,
+        header=12,
         encoding="utf-8-sig"
     )
 except FileNotFoundError:
@@ -69,20 +97,52 @@ def normalize_time(val):
     val = re.sub(r"[–,\-\s]", "", val) # Remove all separators
     return val.strip()
 
-def normalize_spatial(val):
+def normalize_spatial(val, effector_id=None):
     """
-    Normalizes the EffectorScale value by converting to lowercase and 
-    removing non-alphanumeric characters (except spaces) for robust mapping.
+    Normalizes the EffectorScale value and uses effector_id to decide
+    whether 'tissue' maps to FTU or AS.
+
+    Parameters
+    ----------
+    val : str or NaN
+        The EffectorScale value (e.g., "Tissue(FTU)", "cell", "organ", etc.)
+    effector_id : str or None
+        The Effector/ID value to check against ftu_ids when val indicates tissue.
+
+    Returns
+    -------
+    str
+        One of the SPATIAL_MAPPING values (e.g., "FTU", "AS", "CT", "Organ", "B", "Unknown").
     """
-    if pd.isna(val):
-        return SPATIAL_MAPPING.get("nan")
-        
+    # Handle missing
+    if pd.isna(val) or str(val).strip() == "":
+        return SPATIAL_MAPPING.get("nan", "Unknown")
+    
     val_str = str(val).strip().lower()
-    
-    # Aggressively clean the string to match the normalized keys (e.g., "tissue(ftu)" -> "tissueftu")
+
+    # Aggressively clean to normalized key (e.g., "tissue(ftu)" -> "tissueftu")
     normalized_key = re.sub(r"[^a-z0-9]", "", val_str)
-    
-    # Check for direct match against our normalized keys
+
+    # If the explicit key already encodes FTU (e.g., 'tissueftu') prefer that
+    if normalized_key in SPATIAL_MAPPING:
+        # If this is explicitly tissueftu, map directly
+        if normalized_key == "tissueftu":
+            return "FTU"
+        return SPATIAL_MAPPING[normalized_key]
+
+    # If it's some form of tissue (starts with 'tissue' or equals 'tissue'),
+    # decide based on effector_id membership in ftu_ids.
+    if normalized_key.startswith("tissue"):
+        # normalize effector_id string
+        if effector_id is not None and pd.notna(effector_id):
+            eff_id_str = str(effector_id).strip()
+            # If the effector id (exact match) is in ftu list -> FTU, else AS
+            if eff_id_str in ftu_ids:
+                return "FTU"
+        # default for tissue -> AS
+        return "AS"
+
+    # Fallback: try to map by normalized_key; otherwise Unknown
     return SPATIAL_MAPPING.get(normalized_key, "Unknown")
 
 
@@ -120,7 +180,10 @@ main["Combined_Process"] = main.apply(
 )
 
 # Determine the Spatial Type from EffectorScale using normalized values
-main["Spatial_Type"] = main["EffectorScale"].apply(normalize_spatial)
+main["Spatial_Type"] = main.apply(
+    lambda row: normalize_spatial(row.get("EffectorScale", ""), row.get("Effector/ID", "")),
+    axis=1
+)
 
 # -----------------------------------------------------------
 ## STEP 2: Aggregate Processes by Spatial Type and Time Range
