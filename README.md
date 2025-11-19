@@ -1,7 +1,8 @@
 # wpp-table-experiments
 Experimental repo for WPP tables
 
-- got all ids and types from asctb table using all_asctb_ids_with_types.py
+All ids and types from asctb and HRA kg are extracted in this table
+> ./data/all_asctb_ids_with_types.py
 
 ## Spatial Temporal tables using EffectorScale 
 
@@ -12,7 +13,7 @@ Output - output/temporal_spatial_output/v3
 
 ## Scatter Plots
 
-> This script will plot a 3D scatter plot where
+> This script will plot a 3D scatter plot where -
 > - X axis is Spatial Scale => Organs, AS, FTU, CT, B
 > - Y axis is Temporal Scale -> <1 second, 1s - < 1min, 1min - < 1hr, 1hr - < 1day, 1day - < 1week, 1 week - < 1 year, 1 year or longer
 > - Z axis is Organ Systems -> CardioVascular, Digestive, Endocrine, Female Reproductive, Male Reproductive, Muscular, Pulmonary, Skeletal, Urinary System
@@ -29,7 +30,9 @@ In this directory there are csv files containing Organs, AS present in WPP and a
 - AS present in WPP but missing in HRA kg
 
 > Unique AS IDs: 177
+
 > Unique AS IDs present in ASTCB: 121
+
 > Unique AS IDs NOT present in ASTCB: 56
 
 Output - ./output/analysis
