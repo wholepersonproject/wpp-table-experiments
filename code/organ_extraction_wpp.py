@@ -3,7 +3,7 @@
 # import pandas as pd
 
 # # --- CONFIGURATION ---
-# INPUT_DIR = "./data/WPP Tables"  # 👈 change this to your directory path
+# INPUT_DIR = "./data/WPP Tables"  
 # ID_COLUMN = "EffectorLocation/ID"        # The column name to check
 
 # # --- FTU IDs ---
@@ -21,10 +21,10 @@
 # def count_ftu_entries_in_csvs(input_dir: str):
 #     csv_files = glob.glob(os.path.join(input_dir, "*.csv"))
 #     if not csv_files:
-#         print(f"⚠️ No CSV files found in directory: {input_dir}")
+#         print(f"No CSV files found in directory: {input_dir}")
 #         return
 
-#     print(f"📂 Found {len(csv_files)} CSV files in {input_dir}")
+#     print(f" Found {len(csv_files)} CSV files in {input_dir}")
 #     print("--------------------------------------------------")
 
 #     summary = []
@@ -33,12 +33,12 @@
 #         try:
 #             df = pd.read_csv(file_path, encoding="utf-8-sig", low_memory=False)
 #         except Exception as e:
-#             print(f"❌ Error reading {os.path.basename(file_path)}: {e}")
+#             print(f" Error reading {os.path.basename(file_path)}: {e}")
 #             continue
 
 #         # Check if the column exists
 #         if ID_COLUMN not in df.columns:
-#             print(f"⚠️ '{ID_COLUMN}' not found in {os.path.basename(file_path)}")
+#             print(f" '{ID_COLUMN}' not found in {os.path.basename(file_path)}")
 #             summary.append((os.path.basename(file_path), 0, len(df)))
 #             continue
 
@@ -49,12 +49,12 @@
 #         count = df[ID_COLUMN].isin(ftu_ids).sum()
 #         total = len(df)
 
-#         print(f"✅ {os.path.basename(file_path)} — {count} FTU entries out of {total} rows")
+#         print(f" {os.path.basename(file_path)} — {count} FTU entries out of {total} rows")
 
 #         summary.append((os.path.basename(file_path), count, total))
 
 #     # --- Summary table ---
-#     print("\n📊 Summary:")
+#     print("\nSummary:")
 #     print("File Name".ljust(40), "FTU Count".rjust(12), "Total Rows".rjust(12))
 #     print("-" * 70)
 #     for fname, count, total in summary:
@@ -69,9 +69,7 @@ import os
 import glob
 import pandas as pd
 
-# ----------------------------------------
-# 🔧 USER CONFIGURATION
-# ----------------------------------------
+
 input_folder = "./data/WPP Tables"
 output_path = "./output/analysis/unique_effector_locations_with_ids.csv"
 

@@ -33,6 +33,10 @@ Output - output/3d_scatter_plots/
 
 ### Analysis
 
+Unique AS IDs: 177
+Unique AS IDs present in ASTCB: 121
+Unique AS IDs NOT present in ASTCB: 56
+
 Output - ./output/analysis
 
 - output\analysis\Organs_in_WPP.csv (Organs present in WPP tables)
