@@ -1,4 +1,4 @@
-EffectorLabel,EffectorID
+AS,AS_ID
 Small intestine,UBERON:0002108
 adenohypophysis,UBERON:0002196
 alveolus of lung,UBERON:0002299
@@ -120,7 +120,7 @@ pulmonary artery,UBERON:0002012
 pulmonary capillary,UBERON:0016405
 pulmonary vein,UBERON:0002016
 pulmonary venule,UBERON:8600024
-radial artery,UBERON:0001404;UBERON:0001406
+radial artery,UBERON:0001404
 rectus femoris,UBERON:0001378
 renal afferent arteriole,UBERON:0004639
 renal efferent arteriole,UBERON:0004640

@@ -19,7 +19,7 @@ import pandas as pd
 input_folder = "./data/WPP Tables/"
 output_tissue_file = "./output/analysis/AS_UBERON_in_WPP.csv"
 
-# Candidate column name variants (extend if your files use other names)
+
 EFFECTOR_SCALE_COLS = ["effector scale", "Effector Scale", "effector_scale", "EffectorScale"]
 TISSUE_LABEL_COLS = ["Effector/LABEL", "Effector LABEL", "EffectorLabel", "Effector Label", "LABEL", "label"]
 TISSUE_ID_COLS = ["Effector/ID", "Effector ID", "EffectorID", "effector_id", "ID", "id"]
@@ -108,9 +108,9 @@ def collect_tissue_only(input_folder, output_tissue_file):
     rows = []
     for label, ids in sorted(tissue_map.items()):
         id_str = ";".join(sorted(ids)) if ids else ""
-        rows.append({"EffectorLabel": label, "EffectorID": id_str})
+        rows.append({"AS": label, "AS_ID": id_str})
 
-    out_df = pd.DataFrame(rows, columns=["EffectorLabel", "EffectorID"])
+    out_df = pd.DataFrame(rows, columns=["AS", "AS_ID"])
     os.makedirs(os.path.dirname(output_tissue_file) or ".", exist_ok=True)
     out_df.to_csv(output_tissue_file, index=False)
 
