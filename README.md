@@ -1,41 +1,36 @@
 # wpp-table-experiments
 Experimental repo for WPP tables
 
-## Outputs
-
-- missing ids are present in output/missing_ids_labels.csv
-
-- WPP table consisting of time scales is in output/wpp_table.csv
-
 - got all ids and types from asctb table using all_asctb_ids_with_types.py
 
-### Spatial Temporal Tables
+## Spatial Temporal tables using EffectorScale 
 
-Run in this sequence ->
-
-- process_triples_withall_struc.py   (All structure for each entry with Fucntion@Process Triples)
-
-- temporal_spatial_data_id_matched.py (Lowest sturcture/cell matched with ASCTB for each entry with Fucntion@Process Triples)
-
-- Spatial_temporal_table.py (Final spatial temporal table)
-
-## Newly created tables using EffectorScale 
-
+> This script will create spatial temporal tables for all organ systems using "EffectorScale" to identify the spatial scale and "TimeScale" to identify time scale
 Run - new_system.py
 
 Output - output/temporal_spatial_output/v3
 
-### Scatter Plots
+## Scatter Plots
+
+> This script will plot a 3D scatter plot where
+> - X axis is Spatial Scale => Organs, AS, FTU, CT, B
+> - Y axis is Temporal Scale -> <1 second, 1s - < 1min, 1min - < 1hr, 1hr - < 1day, 1day - < 1week, 1 week - < 1 year, 1 year or longer
+> - Z axis is Organ Systems -> CardioVascular, Digestive, Endocrine, Female Reproductive, Male Reproductive, Muscular, Pulmonary, Skeletal, Urinary System
 
 Run = code/3d_scatter_plot.py
 
 Output - output/3d_scatter_plots/
 
-### Analysis
+## Analysis
 
-Unique AS IDs: 177
-Unique AS IDs present in ASTCB: 121
-Unique AS IDs NOT present in ASTCB: 56
+In this directory there are csv files containing Organs, AS present in WPP and also these AS are then categorized in two files -
+
+- AS present in WPP and HRA kg
+- AS present in WPP but missing in HRA kg
+
+> Unique AS IDs: 177
+> Unique AS IDs present in ASTCB: 121
+> Unique AS IDs NOT present in ASTCB: 56
 
 Output - ./output/analysis
 
@@ -49,12 +44,3 @@ Output - ./output/analysis
 
 ### Challenges
 
-Cannot find IDs of majority lower structures in asctb tables hence matched with the ones as lower as possible in hierarchy. Refer this code at code/lowest_missing.py
-
-- Urinary System = Total rows: 38 | Found: 18 | Not found: 20 (data/lowest_missing_endocrine_system_data.csv)
-
-- Endcorine System = Total rows: 45 | Found: 8 | Not found: 37 (data/lowest_missing_endocrine_system_data.csv)
-
-- Male Reproductive System = Total rows: 34 | Found: 12 | Not found: 22 (data/lowest_missing_male_reproductive_data.csv)
-
-- Female Reproductive System = Total rows: 46 | Found: 20 | Not found: 26 (data/lowest_missing_female_reproductive_data.csv)
