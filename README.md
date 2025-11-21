@@ -29,6 +29,7 @@ In this directory there are csv files containing Organs, AS present in WPP and a
 - AS present in WPP and HRA kg
 - AS present in WPP but missing in HRA kg
 
+> If we consider only Where EffectorScale == "Tissue"
 > Unique AS IDs: 177
 
 > Unique AS IDs present in ASTCB: 121
@@ -44,6 +45,19 @@ Output - ./output/analysis
 - output\analysis\AS_ids_missing_in_asctb.csv (AS missin in ASTCB but present in WPP tables)
 
 - output\analysis\AS_ids_present_in_asctb.csv (AS present in ASTCB and WPP tables)
+
+> Now in HRA there are total 4955 AS entries, where organs are also considered as AS
+> In WPP these Organs are considered as Organs and are separated from AS hence the preiouvs results were in consideration.
+> If we consider these Organs separated in WPP as AS as well just to know the number UBERON ids present in WPP and HRA - 
+
+In below file there are total 283 Uberon entries in WPP across 9 organ systems.
+Total Uberon ids in WPP => 283
+WPP intersection HRA => 164
+Only in WPP => 119
+Total in HRA => 4955
+Only in HRA => 4672
+
+- output\analysis\all_Uberon_statistics\all_Uberon_ids_in_WPP.csv
 
 ### Challenges
 
