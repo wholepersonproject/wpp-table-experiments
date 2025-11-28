@@ -24,7 +24,6 @@ time_order = [
 
 # plotting defaults
 cmap_choice = "summer"
-use_log_norm = False     
 figsize = (10, 6)
 dpi = 300
 
