@@ -131,7 +131,7 @@ vmin_adjusted = vmin + (vmax - vmin) * 0.01
 
 p = ax.scatter(
     xs, ys, zs, s=sizes, c=colors,
-    cmap=cmap_choice, alpha=0.9, edgecolors="w", linewidths=0.3,
+    cmap=cmap_choice, alpha=0.9, edgecolors="#808080", linewidths=0.3,
     vmin=vmin_adjusted, vmax=vmax
 )
 
