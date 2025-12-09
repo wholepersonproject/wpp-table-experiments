@@ -5,7 +5,7 @@ import re
 import pandas as pd
 
 # ---------- CONFIG ----------
-input_folder = "./data/WPP Tables/"
+input_folder = "./data/WPP Input Tables/"
 output_file = "./output/analysis/all_CT_statistics/all_CL_ids_in_WPP.csv"
 os.makedirs(os.path.dirname(output_file), exist_ok=True)
 

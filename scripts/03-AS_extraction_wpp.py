@@ -11,7 +11,7 @@ import os
 import glob
 import pandas as pd
 
-input_folder = "./data/WPP Tables/"
+input_folder = "./data/WPP Input Tables/"
 output_tissue_file = "./output/analysis/AS_UBERON_in_WPP.csv"
 
 

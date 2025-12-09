@@ -11,7 +11,7 @@ import matplotlib.colors as mcolors
 # --------------------------
 # Paths
 # --------------------------
-input_folder = "./output/temporal_spatial_output/v3/"
+input_folder = "./output/temporal_spatial_output/v4/"
 output_folder = "./output/3d_scatter_plots/"
 os.makedirs(output_folder, exist_ok=True)
 files = sorted(glob.glob(os.path.join(input_folder, "*.csv")))
