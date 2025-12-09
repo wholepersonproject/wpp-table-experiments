@@ -8,7 +8,7 @@ import re
 # CONFIG - change only these
 # --------------------
 INPUT_FOLDER = "./data/WPP Input Tables/"   # root folder containing CSV files (will search recursively)
-OUTPUT_FOLDER = "./output/temporal_spatial_output/v4/"
+OUTPUT_FOLDER = "./output/temporal_spatial_output/v5/"
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # --------------------
@@ -118,6 +118,19 @@ def get_lowest_function(row):
             lowest_func = val
     return lowest_func if lowest_func else "Unknown"
 
+def build_combined_process(row):
+    proc = row.get("Process", "")
+    if pd.isna(proc) or str(proc).strip().lower() in ["", "nan", "none", "null"]:
+        return None   # ← SKIP MISSING ENTIRELY
+
+    proc = str(proc).strip()
+
+    lf = row.get("Lowest_Function", "")
+    if lf and lf != "Unknown":
+        return f"{lf}@{proc}"
+    else:
+        return proc
+
 def process_and_save_single(MAIN_CSV_PATH, OUTPUT_PATH):
     main = pd.read_csv(MAIN_CSV_PATH, header=header_row, encoding="utf-8-sig")
     main.columns = main.columns.str.strip()
@@ -125,18 +138,7 @@ def process_and_save_single(MAIN_CSV_PATH, OUTPUT_PATH):
     main["TimeScale_norm"] = main["TimeScale"].apply(normalize_time)
     main["Lowest_Function"] = main.apply(get_lowest_function, axis=1)
 
-    main["Combined_Process"] = main.apply(
-        lambda row: (
-            process_val := str(row.get('Process', '')).strip(),
-            final_process := process_val if process_val else "nan",
-            (
-                f"{row['Lowest_Function']}@{final_process}"
-                if row["Lowest_Function"] != "Unknown"
-                else final_process
-            )
-        )[-1],
-        axis=1
-    )
+    main["Combined_Process"] = main.apply(build_combined_process, axis=1)
 
     main["Spatial_Type"] = main.apply(
         lambda row: normalize_spatial(row.get("EffectorScale", ""), row.get("Effector/ID", "")),

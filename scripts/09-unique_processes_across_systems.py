@@ -7,7 +7,7 @@ import re
 # ---------------------------
 # CONFIG
 # ---------------------------
-input_folder = "./output/temporal_spatial_output/v4/"
+input_folder = "./output/temporal_spatial_output/v5/"
 output_summary_file = "./output/unique_processes/unique_process_counts_final_summary.csv"
 
 ENTRY_SEPARATOR = ";"
