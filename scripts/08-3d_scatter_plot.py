@@ -34,7 +34,7 @@ use_log_norm = False
 def process_count(x):
     if pd.isna(x) or str(x).strip() == "":
         return 0
-    return len([p for p in str(x).split(";") if p.strip()])
+    return len([p for p in str(x).split("?") if p.strip()])
 
 def extract_organ_system_name(filename):
     """
@@ -129,6 +129,8 @@ if use_log_norm and colors.min() > 0:
 vmin = max(1, colors.min())  # avoid 0
 vmax = colors.max()
 vmin_adjusted = vmin + (vmax - vmin) * 0.01 
+
+print(f"Global colorbar range: {vmin_adjusted:.2f} to {vmax:.2f}")
 
 p = ax.scatter(
     xs, ys, zs, s=sizes, c=colors,

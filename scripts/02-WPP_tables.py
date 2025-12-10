@@ -152,11 +152,11 @@ def process_and_save_single(MAIN_CSV_PATH, OUTPUT_PATH):
     grouped = (
         melted_df.groupby(["Time Range", "Spatial_Type"])["Combined_Process"]
         .apply(
-            lambda x: "; ".join(
+            lambda x: "? ".join(
                 sorted(
                     set(
                         p.strip() for process_str in x.dropna()
-                        for p in process_str.split(';') if p.strip()
+                        for p in process_str.split('?') if p.strip()
                     )
                 )
             )

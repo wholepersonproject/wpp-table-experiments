@@ -35,7 +35,7 @@ def process_count(x):
     """Return number of semicolon-separated IDs in a cell; treat empty/NaN as 0."""
     if pd.isna(x) or str(x).strip() == "":
         return 0
-    return len([p for p in str(x).split(";") if p.strip()])
+    return len([p for p in str(x).split("?") if p.strip()])
 
 def extract_organ_system_name(filename):
     """
