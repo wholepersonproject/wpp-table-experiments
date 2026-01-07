@@ -1,56 +1,169 @@
 CL_LABELS,CL_IDs
 sperm,CL:0000019
 oocyte,CL:0000023
+mature basophil,CL:0000043
 osteoblast,CL:0000062
+ciliated epithelial cell,CL:0000067
+blood cell,CL:0000081
 epithelial cell of pancreas,CL:0000083
 osteoclast,CL:0000092
+sensory epithelial cell,CL:0000098
 autonomic neuron,CL:0000107
+CNS neuron (sensu Vertebrata),CL:0000117
+basket cell,CL:0000118
+gut endothelial cell,CL:0000131
+mesenchymal stem cell,CL:0000134
 osteocyte,CL:0000137
+professional antigen presenting cell,CL:0000145
 secretory cell,CL:0000151
 peptic cell,CL:0000155
 goblet cell,CL:0000160
 parietal cell,CL:0000162
 chromaffin cell,CL:0000166
 Leydig cell,CL:0000178
+pain receptor cell,CL:0000198
 Sertoli cell,CL:0000216
+keratinizing barrier epithelial cell,CL:0000237
+neuroblast (sensu Nematoda and Protostomia),CL:0000338
+hair follicle dermal papilla cell,CL:0000346
+tendon cell,CL:0000388
 chief cell of parathyroid gland,CL:0000446
 white adipocyte,CL:0000448
 digestive enzyme secreting cell,CL:0000470
 granulosa cell,CL:0000501
 enterochromaffin-like cell,CL:0000504
+paneth cell,CL:0000510
+melanoblast,CL:0000541
 parafollicular cell,CL:0000570
+pyramidal neuron,CL:0000598
 acinar cell,CL:0000622
+collagen secreting cell,CL:0000667
+centripetally migrating follicle cell,CL:0000671
+Cajal-Retzius cell,CL:0000695
 PP cell,CL:0000696
 dopaminergic neuron,CL:0000700
+somatic stem cell,CL:0000723
+urothelial cell,CL:0000731
 striated muscle cell,CL:0000737
+nucleated thrombocyte,CL:0000762
+myeloid cell,CL:0000763
+myeloid leukocyte,CL:0000766
+immature basophil,CL:0000768
+multinucleated phagocyte,CL:0000783
+mature B cell,CL:0000785
+CD4-negative CD8-negative gamma-delta intraepithelial T cell,CL:0000803
+DN2 thymocyte,CL:0000806
+DN4 thymocyte,CL:0000808
+Effector Memory T cells,CL:0000813
+B-1 B cell,CL:0000819
+B-1a B cell,CL:0000820
+B-2 B cell,CL:0000822
+pro-NK cell,CL:0000825
+follicular B cell,CL:0000843
+inflammatory macrophage,CL:0000863
+tissue-resident macrophage,CL:0000864
+nasal and broncial associated lymphoid tissue macrophage,CL:0000886
+alternatively activated macrophage,CL:0000890
+thymocyte,CL:0000893
+DN1 thymic pro-T cell,CL:0000894
+"activated CD4-positive, alpha-beta T cell",CL:0000896
+naive T cell,CL:0000898
+induced T-regulatory cell,CL:0000902
+natural T-regulatory cell,CL:0000903
+effector T cell,CL:0000911
+"activated CD4-negative, CD8-negative type I NK T cell",CL:0000928
+"CD4-negative, CD8-negative type I NK T cell secreting interleukin-4",CL:0000930
+activated type II NK T cell,CL:0000931
+antibody secreting cell,CL:0000946
+small pre-B-II cell,CL:0000954
+pre-B-II cell,CL:0000955
+large pre-B-II cell,CL:0000957
+IgA plasmablast,CL:0000984
+common dendritic progenitor,CL:0001029
+ILC1,CL:0001068
+"group 2 innate lymphoid cell, human",CL:0001081
+"lymphocyte of B lineage, CD19-positive",CL:0001200
+pre-conventional dendritic cell,CL:0002010
+basophil mast progenitor cell,CL:0002028
+early pro-B cell,CL:0002046
+late pro-B cell,CL:0002048
+fraction F mature B cell,CL:0002056
+T-helper 9 cell,CL:0002061
 nodal myocyte,CL:0002072
 tanycyte,CL:0002085
+bone marrow cell,CL:0002092
+CD27-negative gamma-delta T cell,CL:0002125
 regular atrial cardiac myocyte,CL:0002129
 regular ventricular cardiac myocyte,CL:0002131
+endothelial cell of vascular tree,CL:0002139
+skin sebocyte,CL:0002140
+clear cell of eccrine sweat gland,CL:0002146
+early promyelocyte,CL:0002154
 mucous cell of stomach,CL:0002180
+basal proper cell of olfactory epithelium,CL:0002184
+basal cell of epidermis,CL:0002187
+granular cell of epidermis,CL:0002189
+oxyphil cell of thyroid,CL:0002200
+tuft cell,CL:0002204
 epithelial cell of thyroid gland,CL:0002257
 type ECL enteroendocrine cell,CL:0002273
 type I enteroendocrine cell,CL:0002277
 GIP cell,CL:0002278
 type L enteroendocrine cell,CL:0002279
 type S enteroendocrine cell,CL:0002281
+epithelial cell of thymus,CL:0002293
 epithelial cell of distal tubule,CL:0002305
+epithelial cell of skin gland,CL:0002308
+connective tissue cell,CL:0002320
 lactocyte,CL:0002325
+mammary gland epithelial cell,CL:0002327
 primitive red blood cell,CL:0002355
+medullary thymic epithelial cell,CL:0002365
+respiratory tract goblet cell,CL:0002370
+intermediate monocyte,CL:0002393
+fetal thymocyte,CL:0002404
+mature T cell,CL:0002419
+immature T cell,CL:0002420
+nucleated reticulocyte,CL:0002421
+"CD4-intermediate, CD8-positive double-positive thymocyte",CL:0002430
+small intestine serosal dendritic cell,CL:0002466
+intraepithelial lymphocyte,CL:0002496
 type M enteroendocrine cell,CL:0002502
 kidney epithelial cell,CL:0002518
 fibroblast of dermis,CL:0002551
+hair follicle cell,CL:0002559
+inner root sheath cell,CL:0002560
+outer root sheath cell,CL:0002561
+intestinal epithelial cell,CL:0002563
 smooth muscle cell of trachea,CL:0002600
 glomerular capillary,CL:0004212
 ghrelin secreting cell,CL:0005018
+enteric neuron,CL:0007011
 skeletal muscle fiber,CL:0008002
 lower motor neuron,CL:0008039
 salivary gland cell,CL:0009005
+transit amplifying cell,CL:0009010
+stromal cell of anorectum lamina propria,CL:0009053
+germinal center T cell,CL:0009062
+fibroblastic reticular cell,CL:0009101
+lymph node fibroblastic reticular cell,CL:0009102
 magnocellular neurosecretory cell,CL:0011003
+neural crest cell,CL:0011012
 vagal neural crest cell,CL:0011017
+lymphoid tissue‚Äìinducer cell,CL:0011018
+double negative T regulatory cell,CL:0011024
+progenitor cell,CL:0011026
+dermal microvascular endothelial cell,CL:0011030
 chorionic trophoblast cell,CL:0011101
+colon epithelial cell,CL:0011108
+precursor cell,CL:0011115
+endothelial cell of periportal hepatic sinusoid,CL:0019021
 intestine goblet cell,CL:0019031
+V1delta gamma-delta T cell,CL:0020001
+"mucosal-associated invariant T cell, human",CL:0020002
 colonocyte,CL:1000347
+stem cell of epidermis,CL:1000428
+epithelial cell of sweat gland,CL:1000448
 cholangiocyte,CL:1000488
 kidney glomerular epithelial cell,CL:1000510
 juxtaglomerular complex cell,CL:1000618
@@ -60,15 +173,44 @@ kidney arterial blood vessel cell,CL:1000891
 kidney loop of Henle epithelial cell,CL:1000909
 kidney afferent arteriolar cell,CL:1001006
 parvocellular neurosecretory cell,CL:1001505
+stomach enteroendocrine cell,CL:1001517
 lung endothelial cell,CL:1001567
+colon endothelial cell,CL:1001572
+nasopharyngeal epithelial cell,CL:1001573
+uterine cervix squamous cell,CL:1001575
+lateral ventricle glial cell,CL:1001581
 duodenum secretory cell,CL:1001589
 small intestine secretory cell,CL:1001598
+cerebral cortex endothelial cell,CL:1001602
+bone marrow hematopoietic cell,CL:1001610
 decidual cell,CL:2000002
+dermis blood vessel endothelial cell,CL:2000010
+dermis lymphatic vessel endothelial cell,CL:2000011
+sebaceous gland cell,CL:2000021
 central nervous system neuron,CL:2000029
+hypothalamus cell,CL:2000030
 liver dendritic cell,CL:2000055
 placental villous trophoblast,CL:2000060
+arachnoid barrier cell,CL:4023097
 pulmonary capillary endothelial cell,CL:4028001
+"effector memory CD45RA-positive, alpha-beta T cell, terminally differentiated",CL:4030002
 renal cortical fibroblast,CL:4030025
 cycling endothelial cell of lymphatic vessel,CL:4033079
+cervicothoracic ganglion TH neuron,CL:4033114
 mesenchymal stem cell of apical papilla,CL:4040005
+immune oligodendroglia,CL:4042031
+CGRP-expressing neuron,CL:4042034
+fetal artery endothelial cell,CL:4047006
+intestinal lamina propria fibroblast,CL:4047023
+type 2 interganglionic glia,CL:4047044
+type 3 mucosal glia,CL:4047045
+syncytial cell,CL:4052002
 intestinal villus capillary endothelial cell,CL:4052003
+subepithelial intestinal fibroblast,CL:4052007
+granzyme K-associated CD8 T cell,CL:4052021
+spinous cell,CL:4052060
+epidermal keratinocyte,CL:4052061
+nail bed keratinocyte,CL:4052063
+nail matrix keratinocyte,CL:4052064
+hair follicle dermal stem cell,CL:4072103
+suprabasal cell,CL:7770004

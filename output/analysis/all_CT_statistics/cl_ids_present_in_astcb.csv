@@ -1,23 +1,85 @@
 CL_LABELS,CL_IDs
 stem cell,CL:0000034
+hematopoietic stem cell,CL:0000037
+fibroblast,CL:0000057
 epithelial cell,CL:0000066
+T cell,CL:0000084
+mast cell,CL:0000097
 Motor neurons,CL:0000100
-endothelial cell,CL:0000115
+sensory neuron,CL:0000101
+Endothelial cell,CL:0000115
+adipocyte,CL:0000136
+melanocyte,CL:0000148
+neuroendocrine cell,CL:0000165
 type B cell of pancreas,CL:0000169
 pancreatic A cell,CL:0000171
 pancreatic D cell,CL:0000173
 luteal cell,CL:0000175
-Hepatocyte,CL:0000182
+Hepatocytes,CL:0000182
+myofibroblast cell,CL:0000186
 smooth muscle cell,CL:0000192
 erythrocyte,CL:0000232
 platelet,CL:0000233
+macrophage,CL:0000235
+B cell,CL:0000236
+keratinocyte,CL:0000312
+follicular dendritic cell,CL:0000442
+dendritic cell,CL:0000451
+Langerhans cell,CL:0000453
+connective tissue type mast cell,CL:0000484
+mucosal type mast cell,CL:0000485
+CD4-positive helper T cell,CL:0000492
+stromal cell,CL:0000499
 theca cell,CL:0000503
 gastrin secreting cell,CL:0000509
 neuron,CL:0000540
+lymphocyte,CL:0000542
+T-helper 1 cell,CL:0000545
+T-helper 2 cell,CL:0000546
+alveolar macrophage,CL:0000583
 enterocyte,CL:0000584
+"CD8-positive, alpha-beta T cell",CL:0000625
+hepatic stellate cell,CL:0000632
+basal cell,CL:0000646
 kidney granular cell,CL:0000648
+spinous cell of epidermis,CL:0000649
 podocyte,CL:0000653
+pericyte,CL:0000669
+M cell of gut,CL:0000682
+leukocyte,CL:0000738
 cardiac muscle cell,CL:0000746
+erythroid lineage cell,CL:0000764
+eosinophil,CL:0000771
+neutrophil,CL:0000775
+plasmacytoid dendritic cell,CL:0000784
+plasma cell,CL:0000786
+memory B cell,CL:0000787
+naive B cell,CL:0000788
+"CD8-positive, alpha-beta cytotoxic T cell",CL:0000794
+"double-positive, alpha-beta thymocyte",CL:0000809
+mature NK T cell,CL:0000814
+immature B cell,CL:0000816
+precursor B cell,CL:0000817
+pro-B cell,CL:0000826
+germinal center B cell,CL:0000844
+marginal zone B cell of spleen,CL:0000845
+thymic macrophage,CL:0000866
+lymph node subcapsular sinus macrophage,CL:0000887
+"naive thymus-derived CD4-positive, alpha-beta T cell",CL:0000895
+T-helper 17 cell,CL:0000899
+"effector memory CD4-positive, alpha-beta T cell",CL:0000905
+"CD8-positive, alpha-beta memory T cell",CL:0000909
+immature NK T cell,CL:0000914
+lymphocyte of B lineage,CL:0000945
+plasmablast,CL:0000980
+IgA plasma cell,CL:0000987
+conventional dendritic cell,CL:0000990
+dermal dendritic cell,CL:0001006
+"effector CD8-positive, alpha-beta T cell",CL:0001050
+innate lymphoid cell,CL:0001065
+group 2 innate lymphoid cell,CL:0001069
+group 3 innate lymphoid cell,CL:0001071
+T follicular helper cell,CL:0002038
 pulmonary alveolar type 2 cell,CL:0002063
 pancreatic acinar cell,CL:0002064
 enterocyte of epithelium of large intestine,CL:0002071
@@ -25,7 +87,24 @@ interstitial cell of Cajal,CL:0002088
 stromal cell of endometrium,CL:0002255
 type I cell of carotid body,CL:0002292
 epithelial cell of proximal tubule,CL:0002306
+keratinocyte stem cell,CL:0002337
+luminal cell of prostate epithelium,CL:0002340
+early T lineage precursor,CL:0002425
+mature CD4 single-positive thymocyte,CL:0002436
+mature CD8 single-positive thymocyte,CL:0002437
+hair germinal matrix cell,CL:0002562
+iris pigment epithelial cell,CL:0002565
+retinal blood vessel endothelial cell,CL:0002585
+skin fibroblast,CL:0002620
+endothelial cell of high endothelial venule,CL:0002652
+CD8aa(II) thymocyte,CL:0009069
+medullary thymic epithelial cell type 3,CL:0009073
+monocyte-derived dendritic cell,CL:0011031
+sympathetic neuron,CL:0011103
+telocyte,CL:0017004
+myoepithelial cell of sweat gland,CL:1000417
 kidney collecting duct epithelial cell,CL:1000454
+melanocyte of skin,CL:1000458
 kidney distal convoluted tubule epithelial cell,CL:1000849
 macula densa epithelial cell,CL:1000850
 kidney efferent arteriole endothelial cell,CL:1001099
@@ -33,4 +112,7 @@ kidney loop of Henle thick ascending limb epithelial cell,CL:1001106
 kidney loop of Henle thin ascending limb epithelial cell,CL:1001107
 kidney collecting duct principal cell,CL:1001431
 pancreas exocrine glandular cell,CL:1001599
+splenic endothelial cell,CL:2000053
 kidney loop of Henle short descending thin limb epithelial cell,CL:4030012
+"lung resident memory CD8-positive, alpha-beta T cell",CL:4033039
+onychocyte,CL:4033056
