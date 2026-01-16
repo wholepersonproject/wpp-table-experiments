@@ -8,6 +8,8 @@ mast cell,CL:0000097
 Motor neurons,CL:0000100
 sensory neuron,CL:0000101
 Endothelial cell,CL:0000115
+astrocyte,CL:0000127
+oligodendrocyte,CL:0000128
 adipocyte,CL:0000136
 melanocyte,CL:0000148
 neuroendocrine cell,CL:0000165
@@ -15,7 +17,7 @@ type B cell of pancreas,CL:0000169
 pancreatic A cell,CL:0000171
 pancreatic D cell,CL:0000173
 luteal cell,CL:0000175
-Hepatocyte,CL:0000182
+Hepatocytes,CL:0000182
 myofibroblast cell,CL:0000186
 smooth muscle cell,CL:0000192
 erythrocyte,CL:0000232
@@ -51,7 +53,7 @@ leukocyte,CL:0000738
 cardiac muscle cell,CL:0000746
 erythroid lineage cell,CL:0000764
 eosinophil,CL:0000771
-neutrophil,CL:0000775
+Neutrophils,CL:0000775
 plasmacytoid dendritic cell,CL:0000784
 plasma cell,CL:0000786
 memory B cell,CL:0000787
@@ -96,6 +98,7 @@ mature CD4 single-positive thymocyte,CL:0002436
 mature CD8 single-positive thymocyte,CL:0002437
 hair germinal matrix cell,CL:0002562
 iris pigment epithelial cell,CL:0002565
+Schwann cell,CL:0002573
 retinal blood vessel endothelial cell,CL:0002585
 skin fibroblast,CL:0002620
 endothelial cell of high endothelial venule,CL:0002652

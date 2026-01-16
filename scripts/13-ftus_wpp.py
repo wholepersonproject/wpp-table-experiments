@@ -16,8 +16,8 @@ from typing import List, Optional
 import pandas as pd
 
 INPUT_FOLDER = "./data/WPP Input Tables"   # folder to search (recursive)
-OUT_CSV = "./output/unique_ftus/ftu_id_matches_summary_1.csv"
-OUT_GLOBAL_SUMMARY_CSV = "./output/unique_ftus/ftu_global_process_summary_1.csv"
+OUT_CSV = "./output/unique_ftus/ftu_id_matches_summary_2.csv"
+OUT_GLOBAL_SUMMARY_CSV = "./output/unique_ftus/ftu_global_process_summary_2.csv"
 RECURSIVE = True
 # Candidate ID columns to look for
 ID_COLUMN_CANDIDATES = ["EffectorLocation/ID", "Effector/ID"]

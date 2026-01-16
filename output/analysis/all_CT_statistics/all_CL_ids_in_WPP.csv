@@ -22,6 +22,8 @@ Endothelial cell,CL:0000115
 endothelial cell,CL:0000115
 CNS neuron (sensu Vertebrata),CL:0000117
 basket cell,CL:0000118
+astrocyte,CL:0000127
+oligodendrocyte,CL:0000128
 gut endothelial cell,CL:0000131
 mesenchymal stem cell,CL:0000134
 adipocyte,CL:0000136
@@ -39,12 +41,15 @@ pancreatic A cell,CL:0000171
 pancreatic D cell,CL:0000173
 luteal cell,CL:0000175
 Leydig cell,CL:0000178
-Hepatocyte,CL:0000182
 Hepatocytes,CL:0000182
 hepatocyte,CL:0000182
+Hepatocyte,CL:0000182
 myofibroblast cell,CL:0000186
 smooth muscle cell,CL:0000192
 pain receptor cell,CL:0000198
+auditory hair cell,CL:0000202
+olfactory receptor cell,CL:0000207
+photoreceptor cell,CL:0000210
 Sertoli cell,CL:0000216
 erythrocyte,CL:0000232
 platelet,CL:0000233
@@ -79,6 +84,7 @@ parafollicular cell,CL:0000570
 alveolar macrophage,CL:0000583
 enterocyte,CL:0000584
 pyramidal neuron,CL:0000598
+vestibular hair cell,CL:0000609
 acinar cell,CL:0000622
 "CD8-positive, alpha-beta T cell",CL:0000625
 hepatic stellate cell,CL:0000632
@@ -104,8 +110,8 @@ erythroid lineage cell,CL:0000764
 myeloid leukocyte,CL:0000766
 immature basophil,CL:0000768
 eosinophil,CL:0000771
-neutrophil,CL:0000775
 Neutrophils,CL:0000775
+neutrophil,CL:0000775
 multinucleated phagocyte,CL:0000783
 plasmacytoid dendritic cell,CL:0000784
 mature B cell,CL:0000785
@@ -236,6 +242,7 @@ outer root sheath cell,CL:0002561
 hair germinal matrix cell,CL:0002562
 intestinal epithelial cell,CL:0002563
 iris pigment epithelial cell,CL:0002565
+Schwann cell,CL:0002573
 retinal blood vessel endothelial cell,CL:0002585
 smooth muscle cell of trachea,CL:0002600
 skin fibroblast,CL:0002620
@@ -325,6 +332,7 @@ immune oligodendroglia,CL:4042031
 CGRP-expressing neuron,CL:4042034
 fetal artery endothelial cell,CL:4047006
 intestinal lamina propria fibroblast,CL:4047023
+smooth muscle cell of stomach,CL:4047034
 type 2 interganglionic glia,CL:4047044
 type 3 mucosal glia,CL:4047045
 syncytial cell,CL:4052002

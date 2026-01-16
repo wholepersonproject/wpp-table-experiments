@@ -23,6 +23,9 @@ parietal cell,CL:0000162
 chromaffin cell,CL:0000166
 Leydig cell,CL:0000178
 pain receptor cell,CL:0000198
+auditory hair cell,CL:0000202
+olfactory receptor cell,CL:0000207
+photoreceptor cell,CL:0000210
 Sertoli cell,CL:0000216
 keratinizing barrier epithelial cell,CL:0000237
 neuroblast (sensu Nematoda and Protostomia),CL:0000338
@@ -37,6 +40,7 @@ paneth cell,CL:0000510
 melanoblast,CL:0000541
 parafollicular cell,CL:0000570
 pyramidal neuron,CL:0000598
+vestibular hair cell,CL:0000609
 acinar cell,CL:0000622
 collagen secreting cell,CL:0000667
 centripetally migrating follicle cell,CL:0000671
@@ -200,6 +204,7 @@ immune oligodendroglia,CL:4042031
 CGRP-expressing neuron,CL:4042034
 fetal artery endothelial cell,CL:4047006
 intestinal lamina propria fibroblast,CL:4047023
+smooth muscle cell of stomach,CL:4047034
 type 2 interganglionic glia,CL:4047044
 type 3 mucosal glia,CL:4047045
 syncytial cell,CL:4052002

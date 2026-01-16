@@ -10,6 +10,7 @@ anterior tibial vein,UBERON:0001545
 anterior vena cava,UBERON:0001585
 aorta,UBERON:0000947
 apocrine sweat gland,UBERON:0000382
+arachnoid villus,UBERON:0013153
 arterial system,UBERON:0004572
 articular capsule,UBERON:0001484
 atrioventricular node,UBERON:0002352
@@ -30,6 +31,7 @@ bulb of hair follicle,UBERON:0005932
 bulbo-urethral gland,UBERON:0002366
 bundle of His,UBERON:0002353
 capillary,UBERON:0001982
+capillary of brain,UBERON:8480001
 cardiac Purkinje fiber,UBERON:0002354
 cardiac muscle tissue of atrium,UBERON:0004490
 cardiac muscle tissue of ventricle,UBERON:0018649
@@ -38,6 +40,8 @@ cartilage tissue,UBERON:0002418
 celiac trunk,UBERON:0006637
 cephalic vein,UBERON:0001106
 cerebral artery,UBERON:0004449
+chemoreceptor,UBERON:0018391
+choroid plexus,UBERON:0001886
 ciliary epithelium,UBERON:0001778
 clitoris,UBERON:0002411
 collection of collagen fibrils,UBERON:0002384;UBERON:0011860
@@ -76,7 +80,9 @@ femoral artery,UBERON:0002060
 femoral vein,UBERON:0001361
 fibroblast,CL:0000057
 fimbriae of fallopian tube,UBERON:8410010
+fourth ventricle lateral aperture,UBERON:0003992
 gastroduodenal artery,UBERON:0010132
+genioglossus muscle,UBERON:0001571
 glandular epithelium,UBERON:0006799
 glomerular capillary,CL:0004212
 glossopharyngeal nerve,UBERON:0001649
@@ -92,6 +98,7 @@ hair shaft,UBERON:0002074
 heart left ventricle,UBERON:0002084
 heart right ventricle,UBERON:0002080
 hepatic vein,UBERON:0001143
+hyoglossus muscle,UBERON:0001572
 hypogastric nerve,UBERON:0005303
 ileocolic artery,UBERON:0001197
 ileocolic vein,UBERON:0001219
@@ -99,20 +106,28 @@ iliac artery,UBERON:0005609
 iliac vein,UBERON:0005610
 inferior mesenteric artery,UBERON:0001183
 inferior mesenteric vein,UBERON:0001215
+inferior oblique extraocular muscle,UBERON:0006320
+inferior pharyngeal constrictor,UBERON:0001570
 inferior vena cava,UBERON:0001072
 infraspinatus tendon,UBERON:0012118
 intercostal muscle,UBERON:0001111
 intercostal nerve,UBERON:0003727
+interior rectus extraocular muscle,UBERON:0006322
 internal intercostal muscle,UBERON:0002403
 internal jugular vein,UBERON:0001586
 internal urethral sphincter,UBERON:0004918
 interstitial fluid,UBERON:0000913
+interventricular foramen of CNS,UBERON:0003993
 intrahepatic branch of portal vein,UBERON:0016890
+intrinsic muscle of tongue,UBERON:0001576
 ischiocavernosus muscle,UBERON:0001339
 kidney arcuate vein,UBERON:0004719
 kidney insterstitium,UBERON:0005215
 kidney vasculature,UBERON:0006544
 knee,UBERON:0001465
+lacrimal gland,UBERON:0001817
+laryngeal intrinsic muscle,UBERON:0006328
+lateral rectus extra-ocular muscle,UBERON:0001603
 left cardiac atrium,UBERON:0002079
 left colic artery,UBERON:8410022
 left colic vein,UBERON:8410017
@@ -125,6 +140,7 @@ left hepatic artery,UBERON:0015481
 left renal artery,UBERON:0001186
 left renal vein,UBERON:0001142
 left subclavian artery,UBERON:0001584
+levator palpebrae superioris,UBERON:0001604
 loose connective tissue,UBERON:0011825
 luminal cell of prostate epithelium,CL:0002340
 lung connective tissue,UBERON:0000114
@@ -141,9 +157,13 @@ mammary gland,UBERON:0001911
 mammary gland connective tissue,UBERON:0003584
 mammary gland smooth muscle,UBERON:0004235
 mandible,UBERON:0001684
+masseter muscle,UBERON:0001597
+medial rectus extraocular muscle,UBERON:0001602
 mesenchymal stem cell of apical papilla,CL:4040005
+midbrain cerebral aqueduct,UBERON:0002289
 middle colic artery,UBERON:0001196
 middle colic vein,UBERON:0001218
+middle pharyngeal constrictor,UBERON:0010749
 morula,UBERON:0000085
 mucosa,UBERON:0000344
 mucosa-associated lymphoid tissue,UBERON:0001961
@@ -153,6 +173,9 @@ myoepithelium,UBERON:0000420
 myofibroblast cell,CL:0000186
 myometrium,UBERON:0001296
 nerve of clitoris,UBERON:0035650
+nociceptor nerve ending,UBERON:0035017
+orbicularis oculi muscle,UBERON:0001578
+orbicularis oris muscle,UBERON:0010933
 ovarian follicle,UBERON:0001305
 oviduct epithelium,UBERON:0004804
 pain receptor cell,CL:0000198
@@ -174,6 +197,7 @@ posterior tibial artery,UBERON:0001538
 posterior tibial vein,UBERON:0001546
 proper hepatic artery,UBERON:0015480
 proximal convoluted tubule,UBERON:0001287
+pterygoid muscle,UBERON:0006720
 pudendal nerve,UBERON:0011390
 pulmonary alveolus epithelium,UBERON:0004821
 pulmonary arteriole,UBERON:8600077
@@ -220,11 +244,15 @@ skin epidermis,UBERON:0001003
 skin nerve field,UBERON:0007121
 smooth muscle cell,CL:0000192
 smooth muscle tissue layer of ejaculatory duct,UBERON:0015717
+sphincter pupillae,UBERON:0001607
 splenic artery,UBERON:0001194
 splenic vein,UBERON:0003713
 stem cell,CL:0000034
+sternocleidomastoid,UBERON:0001128
 stratified squamous epithelium,UBERON:0006915
 stratum compactum of dermis,UBERON:0007377
+styloglossus,UBERON:0001573
+stylopharyngeus muscle,UBERON:0008804
 subclavian vein,UBERON:0001587
 sublingual gland,UBERON:0001832
 submandibular gland,UBERON:0001736
@@ -234,15 +262,22 @@ superficial lymphatic vessel,UBERON:0035198
 superficial palmar arch,UBERON:0006564
 superior mesenteric artery,UBERON:0001182
 superior mesenteric vein,UBERON:0001138
+superior oblique extraocular muscle,UBERON:0006321
+superior pharyngeal constrictor,UBERON:0006329
+superior rectus extraocular muscle,UBERON:0006323
+superior sagittal sinus,UBERON:0001642
 sweat gland,UBERON:0001820
 sympathetic nerve,UBERON:0034729
 sympathetic trunk,UBERON:0000407
 tail base gland,UBERON:3010202
+taste bud,UBERON:0001727
 telogen hair,UBERON:0037466
+temporalis muscle,UBERON:0001598
 thoracic nerve,UBERON:0003726
 thoracic sympathetic nerve trunk,UBERON:0004863
 trachea,UBERON:0003126
 trachea non-cartilage connective tissue,UBERON:0009644
+trapezius muscle,UBERON:0002380
 trophoblast,UBERON:0000088
 ulnar artery,UBERON:0001406
 ureter smooth muscle,UBERON:0009919
@@ -258,3 +293,4 @@ venous system,UBERON:0004582
 zona fasciculata of adrenal gland,UBERON:0002054
 zona glomerulosa of adrenal gland,UBERON:0002053
 zona reticularis of adrenal gland,UBERON:0002055
+zygomaticus major muscle,UBERON:0008593
