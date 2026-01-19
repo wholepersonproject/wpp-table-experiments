@@ -20,10 +20,12 @@ In below file there are total 283 Uberon entries in WPP across 9 organ systems. 
 > - Total Uberon ids in WPP => 362
 > - WPP intersection HRA => 201
 > - Only in WPP => 161
-> - Total in HRA => 1837
-> - Only in HRA => 1636
+> - Total in HRA => 4796
+> - Only in HRA => 4595
 
 > Output - output\analysis\all_Uberon_statistics\ 
+
+Note : While calculating this I have considered only AS from WPP and not Organ types, whereas in HRA organs are also labelled type.
 
 ## 05 & 06 Analysis
 
@@ -31,12 +33,16 @@ Similarly, for CT the statistics are in files as total CT, present in WPP but mi
 
  === SUMMARY For CT in WPP and HRA===
 
-> - Total CL IDs checked: 341
-> - Present in ASTCB: 123
-> - Missing in ASTCB: 218
+> - Total CL IDs in WPP: 341
+> - Present in ASTCB/HRA & WPP: 123
+> - Missing in ASTCB/Only in WPP: 218
+> - Total in HRA - 515
+> - Only in HRA - 392
 
 
 > Output - output/analysis/all_CT_statistics
+
+Note: The total unique CT type in HRA are 1333 but not all have CL ids some have ids like 'ASCTB-TEMP:t-cell' 'ASCTB-TEMP:innate-lymphoid-cell' 'ASCTB-TEMP:mast-cell' which are not considered hence total actual CL ids are less in above stats.
 
 ## 07 - 2D bubble plots for each organ systems
 
