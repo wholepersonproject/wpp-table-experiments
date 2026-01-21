@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import re
 import pandas as pd
 
 # -----------------------
@@ -33,6 +34,20 @@ def split_semicolons(cell):
 def is_cl_id(x):
     return isinstance(x, str) and x.strip().upper().startswith("CL:")
 
+def detect_source_columns(df):
+    """Return columns whose name contains 'source' or 'table' or 'file' (case-insensitive)."""
+    return [c for c in df.columns if re.search(r"(source|table|file)", c, re.I) and c.lower() not in ("cl_ids","cl_ids","cl_id","cllabel","cl_labels","cl_label")]
+
+def join_unique(iterable, sep=" | "):
+    seen = []
+    for x in iterable:
+        if x is None:
+            continue
+        s = str(x).strip()
+        if s and s not in seen:
+            seen.append(s)
+    return sep.join(seen)
+
 # ---------- MAIN ----------
 def main():
     # check inputs
@@ -56,17 +71,37 @@ def main():
         print("[ERROR] Input CL file lacks CL_IDs column.")
         return
 
-    # build mapping CL_ID -> CL_LABEL (prefer first-seen label)
+    # detect source columns in the CL input and label column presence
+    wpp_source_cols = detect_source_columns(cl_df)
+    # prefer CL_LABELS but also accept other likely names
+    label_candidates = ["CL_LABELS", "CL_LABEL", "CL_LABELS", "LABEL", "LABELS"]
+    label_col = next((c for c in label_candidates if c in cl_df.columns), None)
+
+    # build mapping CL_ID -> CL_LABEL (prefer first-seen label) and CL_ID -> set(sources)
     id_to_label = {}
+    id_to_sources = {}
     for _, row in cl_df.iterrows():
-        label = (row.get("CL_LABELS") or "") or ""
+        label = (row.get("CL_LABELS") or row.get("CL_LABEL") or row.get(label_col) or "") or ""
         ids = split_semicolons(row.get("CL_IDs", ""))
+        # collect source values (only the value, not "col=value")
+        source_values_row = []
+        for sc in wpp_source_cols:
+            v = row.get(sc)
+            if pd.notna(v) and str(v).strip() != "":
+                # if the source cell itself has semicolon-separated values, split them
+                for part in split_semicolons(v):
+                    if part:
+                        source_values_row.append(part)
         for cid in ids:
             key = cid.strip()
             if not key:
                 continue
+            # store first-seen label
             if key not in id_to_label:
                 id_to_label[key] = label
+            # collect sources (aggregate)
+            if source_values_row:
+                id_to_sources.setdefault(key, set()).update(source_values_row)
 
     all_cl_ids = set(id_to_label.keys())
     print(f"Total CL IDs loaded from WPP file: {len(all_cl_ids)}")
@@ -96,31 +131,33 @@ def main():
     missing_cl_ids = sorted(all_cl_ids - astcb_cl_ids)           # in WPP but not in ASTCB
     only_in_hra_cl_ids = sorted(astcb_cl_ids - all_cl_ids)       # in ASTCB but not in WPP
 
-    # save present (intersection) and missing (WPP-only) as before, attaching labels
+    # save present (intersection) and missing (WPP-only) as before, attaching labels and WPP_SOURCES
     present_rows = []
     for pid in present_cl_ids:
         present_rows.append({
             "CL_LABELS": id_to_label.get(pid, ""),
-            "CL_IDs": pid
+            "CL_IDs": pid,
+            "WPP_SOURCES": join_unique(sorted(id_to_sources.get(pid, set())))
         })
 
     missing_rows = []
     for mid in missing_cl_ids:
         missing_rows.append({
             "CL_LABELS": id_to_label.get(mid, ""),
-            "CL_IDs": mid
+            "CL_IDs": mid,
+            "WPP_SOURCES": join_unique(sorted(id_to_sources.get(mid, set())))
         })
 
     # write outputs (dedup again by label+id just in case)
     if present_rows:
         pd.DataFrame(present_rows).drop_duplicates(subset=["CL_LABELS", "CL_IDs"]).to_csv(output_present, index=False)
-        print(f"Saved present CL IDs with labels → {output_present}")
+        print(f"Saved present CL IDs with labels & sources → {output_present}")
     else:
         print("No present CL IDs to save.")
 
     if missing_rows:
         pd.DataFrame(missing_rows).drop_duplicates(subset=["CL_LABELS", "CL_IDs"]).to_csv(output_missing, index=False)
-        print(f"Saved missing CL IDs with labels → {output_missing}")
+        print(f"Saved missing CL IDs with labels & sources → {output_missing}")
     else:
         print("No missing CL IDs to save.")
 
@@ -130,13 +167,8 @@ def main():
     print(f"HRA intersection (present in both) => {len(present_cl_ids)}")
     print(f"Only in WPP => {len(missing_cl_ids)}")
     print(f"Total CL IDs in HRA (ASTCB): {total_cl_in_hra}")
-    # Only in HRA = total_cl_in_hra - intersection
     only_in_hra_count = len(only_in_hra_cl_ids)
     print(f"Only in HRA => {only_in_hra_count}")
-
-    # optionally show small samples (uncomment if you want)
-    # print("Sample present CL IDs:", present_cl_ids[:10])
-    # print("Sample only-in-HRA CL IDs:", only_in_hra_cl_ids[:10])
 
 if __name__ == "__main__":
     main()

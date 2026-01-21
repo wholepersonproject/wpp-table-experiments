@@ -1,222 +1,222 @@
-CL_LABELS,CL_IDs
-,CL:0000019
-,CL:0000023
-,CL:0000043
-,CL:0000060
-,CL:0000062
-,CL:0000067
-,CL:0000081
-,CL:0000083
-,CL:0000092
-,CL:0000098
-,CL:0000107
-,CL:0000117
-,CL:0000118
-,CL:0000131
-,CL:0000134
-,CL:0000137
-,CL:0000145
-,CL:0000151
-,CL:0000155
-,CL:0000160
-,CL:0000162
-,CL:0000166
-,CL:0000178
-,CL:0000198
-,CL:0000202
-,CL:0000207
-,CL:0000210
-,CL:0000216
-,CL:0000237
-,CL:0000338
-,CL:0000346
-,CL:0000388
-,CL:0000446
-,CL:0000448
-,CL:0000470
-,CL:0000501
-,CL:0000504
-,CL:0000510
-,CL:0000541
-,CL:0000570
-,CL:0000598
-,CL:0000609
-,CL:0000622
-,CL:0000667
-,CL:0000671
-,CL:0000695
-,CL:0000696
-,CL:0000723
-,CL:0000731
-,CL:0000737
-,CL:0000762
-,CL:0000763
-,CL:0000766
-,CL:0000768
-,CL:0000783
-,CL:0000785
-,CL:0000803
-,CL:0000806
-,CL:0000808
-,CL:0000813
-,CL:0000819
-,CL:0000820
-,CL:0000822
-,CL:0000825
-,CL:0000843
-,CL:0000863
-,CL:0000864
-,CL:0000886
-,CL:0000890
-,CL:0000893
-,CL:0000894
-,CL:0000896
-,CL:0000898
-,CL:0000902
-,CL:0000903
-,CL:0000911
-,CL:0000928
-,CL:0000930
-,CL:0000931
-,CL:0000946
-,CL:0000954
-,CL:0000955
-,CL:0000957
-,CL:0000984
-,CL:0001029
-,CL:0001068
-,CL:0001081
-,CL:0001200
-,CL:0002010
-,CL:0002028
-,CL:0002046
-,CL:0002048
-,CL:0002056
-,CL:0002061
-,CL:0002085
-,CL:0002092
-,CL:0002125
-,CL:0002129
-,CL:0002131
-,CL:0002139
-,CL:0002140
-,CL:0002146
-,CL:0002154
-,CL:0002180
-,CL:0002184
-,CL:0002187
-,CL:0002189
-,CL:0002200
-,CL:0002204
-,CL:0002257
-,CL:0002273
-,CL:0002277
-,CL:0002278
-,CL:0002279
-,CL:0002281
-,CL:0002293
-,CL:0002305
-,CL:0002308
-,CL:0002320
-,CL:0002325
-,CL:0002327
-,CL:0002355
-,CL:0002365
-,CL:0002370
-,CL:0002393
-,CL:0002404
-,CL:0002419
-,CL:0002420
-,CL:0002421
-,CL:0002430
-,CL:0002466
-,CL:0002496
-,CL:0002502
-,CL:0002518
-,CL:0002551
-,CL:0002559
-,CL:0002560
-,CL:0002561
-,CL:0002563
-,CL:0002600
-,CL:0004212
-,CL:0005018
-,CL:0007011
-,CL:0008002
-,CL:0008038
-,CL:0008039
-,CL:0009005
-,CL:0009010
-,CL:0009053
-,CL:0009062
-,CL:0009101
-,CL:0009102
-,CL:0011003
-,CL:0011012
-,CL:0011017
-,CL:0011018
-,CL:0011024
-,CL:0011026
-,CL:0011030
-,CL:0011101
-,CL:0011108
-,CL:0011115
-,CL:0019021
-,CL:0019031
-,CL:0020001
-,CL:0020002
-,CL:1000347
-,CL:1000428
-,CL:1000448
-,CL:1000488
-,CL:1000510
-,CL:1000618
-,CL:1000838
-,CL:1000839
-,CL:1000891
-,CL:1000909
-,CL:1001006
-,CL:1001451
-,CL:1001505
-,CL:1001517
-,CL:1001567
-,CL:1001572
-,CL:1001573
-,CL:1001575
-,CL:1001581
-,CL:1001589
-,CL:1001598
-,CL:1001602
-,CL:1001610
-,CL:2000002
-,CL:2000010
-,CL:2000011
-,CL:2000021
-,CL:2000030
-,CL:2000055
-,CL:2000060
-,CL:4023026
-,CL:4023097
-,CL:4028001
-,CL:4030002
-,CL:4030025
-,CL:4033079
-,CL:4033114
-,CL:4040005
-,CL:4042031
-,CL:4042034
-,CL:4047006
-,CL:4047023
-,CL:4047034
-,CL:4047044
-,CL:4047045
-,CL:4052002
-,CL:4052003
-,CL:4052007
-,CL:4052021
-,CL:4052060
-,CL:4052061
-,CL:4052063
-,CL:4052064
-,CL:4072103
-,CL:7770004
+CL_LABELS,CL_IDs,WPP_SOURCES
+sperm,CL:0000019,male-reproductive-system-v1
+oocyte,CL:0000023,female-reproductive-v
+mature basophil,CL:0000043,immune and lymphatic system-v1.0-draft-20260106
+odontoblast,CL:0000060,dental-and-craniofacial-system-v1
+osteoblast,CL:0000062,dental-and-craniofacial-system-v1 | endocrine-system-v1 | integumentary system-v1.0-draft-20260106 | male-reproductive-system-v1 | skeletal-system-v1
+ciliated epithelial cell,CL:0000067,immune and lymphatic system-v1.0-draft-20260106
+blood cell,CL:0000081,immune and lymphatic system-v1.0-draft-20260106
+epithelial cell of pancreas,CL:0000083,digestive-system-v1.0-draft-20251118
+osteoclast,CL:0000092,dental-and-craniofacial-system-v1 | endocrine-system-v1 | male-reproductive-system-v1 | skeletal-system-v1
+sensory epithelial cell,CL:0000098,integumentary system-v1.0-draft-20260106
+autonomic neuron,CL:0000107,immune and lymphatic system-v1.0-draft-20260106 | integumentary system-v1.0-draft-20260106 | muscular-system-v1 | nervous-system-v1
+CNS neuron (sensu Vertebrata),CL:0000117,immune and lymphatic system-v1.0-draft-20260106
+basket cell,CL:0000118,immune and lymphatic system-v1.0-draft-20260106
+gut endothelial cell,CL:0000131,immune and lymphatic system-v1.0-draft-20260106
+mesenchymal stem cell,CL:0000134,immune and lymphatic system-v1.0-draft-20260106 | integumentary system-v1.0-draft-20260106
+osteocyte,CL:0000137,dental-and-craniofacial-system-v1 | endocrine-system-v1 | skeletal-system-v1
+professional antigen presenting cell,CL:0000145,immune and lymphatic system-v1.0-draft-20260106
+secretory cell,CL:0000151,digestive-system-v1.0-draft-20251118 | integumentary system-v1.0-draft-20260106
+peptic cell,CL:0000155,digestive-system-v1.0-draft-20251118
+goblet cell,CL:0000160,digestive-system-v1.0-draft-20251118
+parietal cell,CL:0000162,digestive-system-v1.0-draft-20251118 | endocrine-system-v1
+chromaffin cell,CL:0000166,endocrine-system-v1
+Leydig cell,CL:0000178,immune and lymphatic system-v1.0-draft-20260106 | male-reproductive-system-v1
+pain receptor cell,CL:0000198,fascia-system-v1.0-draft-20251208
+auditory hair cell,CL:0000202,dental-and-craniofacial-system-v1 | nervous-system-v1
+olfactory receptor cell,CL:0000207,dental-and-craniofacial-system-v1 | nervous-system-v1
+photoreceptor cell,CL:0000210,dental-and-craniofacial-system-v1 | nervous-system-v1
+Sertoli cell,CL:0000216,immune and lymphatic system-v1.0-draft-20260106 | male-reproductive-system-v1
+keratinizing barrier epithelial cell,CL:0000237,immune and lymphatic system-v1.0-draft-20260106
+neuroblast (sensu Nematoda and Protostomia),CL:0000338,immune and lymphatic system-v1.0-draft-20260106
+hair follicle dermal papilla cell,CL:0000346,integumentary system-v1.0-draft-20260106
+tendon cell,CL:0000388,fascia-system-v1.0-draft-20251208
+chief cell of parathyroid gland,CL:0000446,dental-and-craniofacial-system-v1 | endocrine-system-v1 | skeletal-system-v1
+white adipocyte,CL:0000448,endocrine-system-v1 | female-reproductive-v | male-reproductive-system-v1
+digestive enzyme secreting cell,CL:0000470,digestive-system-v1.0-draft-20251118
+granulosa cell,CL:0000501,female-reproductive-v
+enterochromaffin-like cell,CL:0000504,digestive-system-v1.0-draft-20251118
+paneth cell,CL:0000510,immune and lymphatic system-v1.0-draft-20260106
+melanoblast,CL:0000541,integumentary system-v1.0-draft-20260106
+parafollicular cell,CL:0000570,dental-and-craniofacial-system-v1 | endocrine-system-v1 | skeletal-system-v1
+pyramidal neuron,CL:0000598,integumentary system-v1.0-draft-20260106
+vestibular hair cell,CL:0000609,dental-and-craniofacial-system-v1 | nervous-system-v1
+acinar cell,CL:0000622,digestive-system-v1.0-draft-20251118
+collagen secreting cell,CL:0000667,fascia-system-v1.0-draft-20251208
+centripetally migrating follicle cell,CL:0000671,immune and lymphatic system-v1.0-draft-20260106
+Cajal-Retzius cell,CL:0000695,immune and lymphatic system-v1.0-draft-20260106
+PP cell,CL:0000696,endocrine-system-v1
+somatic stem cell,CL:0000723,integumentary system-v1.0-draft-20260106
+urothelial cell,CL:0000731,immune and lymphatic system-v1.0-draft-20260106
+striated muscle cell,CL:0000737,endocrine-system-v1
+nucleated thrombocyte,CL:0000762,immune and lymphatic system-v1.0-draft-20260106
+myeloid cell,CL:0000763,immune and lymphatic system-v1.0-draft-20260106
+myeloid leukocyte,CL:0000766,immune and lymphatic system-v1.0-draft-20260106
+immature basophil,CL:0000768,immune and lymphatic system-v1.0-draft-20260106
+multinucleated phagocyte,CL:0000783,immune and lymphatic system-v1.0-draft-20260106
+mature B cell,CL:0000785,immune and lymphatic system-v1.0-draft-20260106
+CD4-negative CD8-negative gamma-delta intraepithelial T cell,CL:0000803,immune and lymphatic system-v1.0-draft-20260106
+DN2 thymocyte,CL:0000806,immune and lymphatic system-v1.0-draft-20260106
+DN4 thymocyte,CL:0000808,immune and lymphatic system-v1.0-draft-20260106
+Effector Memory T cells | memory T cell,CL:0000813,immune and lymphatic system-v1.0-draft-20260106 | integumentary system-v1.0-draft-20260106
+B-1 B cell,CL:0000819,immune and lymphatic system-v1.0-draft-20260106
+B-1a B cell,CL:0000820,immune and lymphatic system-v1.0-draft-20260106
+B-2 B cell,CL:0000822,immune and lymphatic system-v1.0-draft-20260106
+pro-NK cell,CL:0000825,immune and lymphatic system-v1.0-draft-20260106
+follicular B cell,CL:0000843,immune and lymphatic system-v1.0-draft-20260106
+inflammatory macrophage,CL:0000863,immune and lymphatic system-v1.0-draft-20260106
+tissue-resident macrophage,CL:0000864,immune and lymphatic system-v1.0-draft-20260106
+nasal and broncial associated lymphoid tissue macrophage,CL:0000886,immune and lymphatic system-v1.0-draft-20260106
+alternatively activated macrophage,CL:0000890,immune and lymphatic system-v1.0-draft-20260106
+thymocyte,CL:0000893,immune and lymphatic system-v1.0-draft-20260106
+DN1 thymic pro-T cell,CL:0000894,immune and lymphatic system-v1.0-draft-20260106
+"activated CD4-positive, alpha-beta T cell",CL:0000896,immune and lymphatic system-v1.0-draft-20260106
+naive T cell,CL:0000898,immune and lymphatic system-v1.0-draft-20260106
+induced T-regulatory cell,CL:0000902,immune and lymphatic system-v1.0-draft-20260106
+natural T-regulatory cell,CL:0000903,immune and lymphatic system-v1.0-draft-20260106
+effector T cell,CL:0000911,immune and lymphatic system-v1.0-draft-20260106
+"activated CD4-negative, CD8-negative type I NK T cell",CL:0000928,immune and lymphatic system-v1.0-draft-20260106
+"CD4-negative, CD8-negative type I NK T cell secreting interleukin-4",CL:0000930,immune and lymphatic system-v1.0-draft-20260106
+activated type II NK T cell,CL:0000931,immune and lymphatic system-v1.0-draft-20260106
+antibody secreting cell,CL:0000946,immune and lymphatic system-v1.0-draft-20260106
+small pre-B-II cell,CL:0000954,immune and lymphatic system-v1.0-draft-20260106
+pre-B-II cell,CL:0000955,immune and lymphatic system-v1.0-draft-20260106
+large pre-B-II cell,CL:0000957,immune and lymphatic system-v1.0-draft-20260106
+IgA plasmablast,CL:0000984,immune and lymphatic system-v1.0-draft-20260106
+common dendritic progenitor,CL:0001029,immune and lymphatic system-v1.0-draft-20260106
+ILC1,CL:0001068,immune and lymphatic system-v1.0-draft-20260106
+"group 2 innate lymphoid cell, human",CL:0001081,immune and lymphatic system-v1.0-draft-20260106
+"lymphocyte of B lineage, CD19-positive",CL:0001200,immune and lymphatic system-v1.0-draft-20260106
+pre-conventional dendritic cell,CL:0002010,immune and lymphatic system-v1.0-draft-20260106
+basophil mast progenitor cell,CL:0002028,immune and lymphatic system-v1.0-draft-20260106
+early pro-B cell,CL:0002046,immune and lymphatic system-v1.0-draft-20260106
+late pro-B cell,CL:0002048,immune and lymphatic system-v1.0-draft-20260106
+fraction F mature B cell,CL:0002056,immune and lymphatic system-v1.0-draft-20260106
+T-helper 9 cell,CL:0002061,immune and lymphatic system-v1.0-draft-20260106
+tanycyte,CL:0002085,endocrine-system-v1
+bone marrow cell,CL:0002092,immune and lymphatic system-v1.0-draft-20260106
+CD27-negative gamma-delta T cell,CL:0002125,immune and lymphatic system-v1.0-draft-20260106
+regular atrial cardiac myocyte,CL:0002129,cardiovascular-system-v1 | endocrine-system-v1
+regular ventricular cardiac myocyte,CL:0002131,cardiovascular-system-v1 | endocrine-system-v1
+endothelial cell of vascular tree,CL:0002139,integumentary system-v1.0-draft-20260106
+skin sebocyte,CL:0002140,integumentary system-v1.0-draft-20260106
+clear cell of eccrine sweat gland,CL:0002146,integumentary system-v1.0-draft-20260106
+early promyelocyte,CL:0002154,immune and lymphatic system-v1.0-draft-20260106
+mucous cell of stomach,CL:0002180,digestive-system-v1.0-draft-20251118
+basal proper cell of olfactory epithelium,CL:0002184,integumentary system-v1.0-draft-20260106
+basal cell of epidermis,CL:0002187,integumentary system-v1.0-draft-20260106
+granular cell of epidermis,CL:0002189,integumentary system-v1.0-draft-20260106
+oxyphil cell of thyroid,CL:0002200,immune and lymphatic system-v1.0-draft-20260106
+tuft cell,CL:0002204,immune and lymphatic system-v1.0-draft-20260106
+epithelial cell of thyroid gland,CL:0002257,endocrine-system-v1
+type ECL enteroendocrine cell,CL:0002273,digestive-system-v1.0-draft-20251118
+type I enteroendocrine cell,CL:0002277,endocrine-system-v1
+GIP cell,CL:0002278,endocrine-system-v1
+type L enteroendocrine cell,CL:0002279,digestive-system-v1.0-draft-20251118 | endocrine-system-v1
+type S enteroendocrine cell,CL:0002281,endocrine-system-v1
+epithelial cell of thymus,CL:0002293,immune and lymphatic system-v1.0-draft-20260106
+epithelial cell of distal tubule,CL:0002305,urinary-system-v1.0-draft-251115
+epithelial cell of skin gland,CL:0002308,integumentary system-v1.0-draft-20260106
+connective tissue cell,CL:0002320,fascia-system-v1.0-draft-20251208 | integumentary system-v1.0-draft-20260106
+lactocyte,CL:0002325,female-reproductive-v
+mammary gland epithelial cell,CL:0002327,immune and lymphatic system-v1.0-draft-20260106
+primitive red blood cell,CL:0002355,pulmonary-system-v1.0-draft-20251110
+medullary thymic epithelial cell,CL:0002365,immune and lymphatic system-v1.0-draft-20260106
+respiratory tract goblet cell,CL:0002370,immune and lymphatic system-v1.0-draft-20260106
+intermediate monocyte,CL:0002393,immune and lymphatic system-v1.0-draft-20260106
+fetal thymocyte,CL:0002404,immune and lymphatic system-v1.0-draft-20260106
+mature T cell,CL:0002419,immune and lymphatic system-v1.0-draft-20260106
+immature T cell,CL:0002420,immune and lymphatic system-v1.0-draft-20260106
+nucleated reticulocyte,CL:0002421,immune and lymphatic system-v1.0-draft-20260106
+"CD4-intermediate, CD8-positive double-positive thymocyte",CL:0002430,immune and lymphatic system-v1.0-draft-20260106
+small intestine serosal dendritic cell,CL:0002466,immune and lymphatic system-v1.0-draft-20260106
+intraepithelial lymphocyte,CL:0002496,immune and lymphatic system-v1.0-draft-20260106
+type M enteroendocrine cell,CL:0002502,endocrine-system-v1
+kidney epithelial cell,CL:0002518,urinary-system-v1.0-draft-251115
+fibroblast of dermis,CL:0002551,endocrine-system-v1 | female-reproductive-v | male-reproductive-system-v1
+hair follicle cell,CL:0002559,integumentary system-v1.0-draft-20260106
+inner root sheath cell,CL:0002560,integumentary system-v1.0-draft-20260106
+outer root sheath cell,CL:0002561,integumentary system-v1.0-draft-20260106
+intestinal epithelial cell,CL:0002563,immune and lymphatic system-v1.0-draft-20260106
+smooth muscle cell of trachea,CL:0002600,pulmonary-system-v1.0-draft-20251110
+glomerular capillary,CL:0004212,endocrine-system-v1
+ghrelin secreting cell,CL:0005018,endocrine-system-v1
+enteric neuron,CL:0007011,immune and lymphatic system-v1.0-draft-20260106
+skeletal muscle fiber,CL:0008002,endocrine-system-v1 | female-reproductive-v | male-reproductive-system-v1 | muscular-system-v1 | nervous-system-v1
+alpha motor neuron,CL:0008038,nervous-system-v1
+lower motor neuron,CL:0008039,muscular-system-v1 | nervous-system-v1
+salivary gland cell,CL:0009005,digestive-system-v1.0-draft-20251118
+transit amplifying cell,CL:0009010,integumentary system-v1.0-draft-20260106
+stromal cell of anorectum lamina propria,CL:0009053,immune and lymphatic system-v1.0-draft-20260106
+germinal center T cell,CL:0009062,immune and lymphatic system-v1.0-draft-20260106
+fibroblastic reticular cell,CL:0009101,immune and lymphatic system-v1.0-draft-20260106
+lymph node fibroblastic reticular cell,CL:0009102,immune and lymphatic system-v1.0-draft-20260106
+magnocellular neurosecretory cell,CL:0011003,endocrine-system-v1
+neural crest cell,CL:0011012,integumentary system-v1.0-draft-20260106
+vagal neural crest cell,CL:0011017,digestive-system-v1.0-draft-20251118 | pulmonary-system-v1.0-draft-20251110
+lymphoid tissue‚Äìinducer cell,CL:0011018,immune and lymphatic system-v1.0-draft-20260106
+double negative T regulatory cell,CL:0011024,immune and lymphatic system-v1.0-draft-20260106
+progenitor cell,CL:0011026,integumentary system-v1.0-draft-20260106
+dermal microvascular endothelial cell,CL:0011030,immune and lymphatic system-v1.0-draft-20260106
+chorionic trophoblast cell,CL:0011101,female-reproductive-v
+colon epithelial cell,CL:0011108,immune and lymphatic system-v1.0-draft-20260106
+precursor cell,CL:0011115,immune and lymphatic system-v1.0-draft-20260106
+endothelial cell of periportal hepatic sinusoid,CL:0019021,immune and lymphatic system-v1.0-draft-20260106
+intestine goblet cell,CL:0019031,digestive-system-v1.0-draft-20251118
+V1delta gamma-delta T cell,CL:0020001,immune and lymphatic system-v1.0-draft-20260106
+"mucosal-associated invariant T cell, human",CL:0020002,immune and lymphatic system-v1.0-draft-20260106
+colonocyte,CL:1000347,digestive-system-v1.0-draft-20251118
+stem cell of epidermis,CL:1000428,integumentary system-v1.0-draft-20260106
+epithelial cell of sweat gland,CL:1000448,integumentary system-v1.0-draft-20260106
+cholangiocyte,CL:1000488,digestive-system-v1.0-draft-20251118
+kidney glomerular epithelial cell,CL:1000510,endocrine-system-v1
+juxtaglomerular complex cell,CL:1000618,cardiovascular-system-v1 | endocrine-system-v1
+kidney proximal convoluted tubule epithelial cell,CL:1000838,cardiovascular-system-v1 | dental-and-craniofacial-system-v1 | endocrine-system-v1 | skeletal-system-v1 | urinary-system-v1.0-draft-251115
+kidney proximal straight tubule epithelial cell,CL:1000839,urinary-system-v1.0-draft-251115
+kidney arterial blood vessel cell,CL:1000891,urinary-system-v1.0-draft-251115
+kidney loop of Henle epithelial cell,CL:1000909,urinary-system-v1.0-draft-251115
+kidney afferent arteriolar cell,CL:1001006,cardiovascular-system-v1 | endocrine-system-v1
+sensory neuron of dorsal root ganglion,CL:1001451,nervous-system-v1
+parvocellular neurosecretory cell,CL:1001505,endocrine-system-v1 | female-reproductive-v | male-reproductive-system-v1
+stomach enteroendocrine cell,CL:1001517,immune and lymphatic system-v1.0-draft-20260106
+lung endothelial cell,CL:1001567,pulmonary-system-v1.0-draft-20251110
+colon endothelial cell,CL:1001572,immune and lymphatic system-v1.0-draft-20260106
+nasopharyngeal epithelial cell,CL:1001573,immune and lymphatic system-v1.0-draft-20260106 | integumentary system-v1.0-draft-20260106
+uterine cervix squamous cell,CL:1001575,immune and lymphatic system-v1.0-draft-20260106
+lateral ventricle glial cell,CL:1001581,immune and lymphatic system-v1.0-draft-20260106
+duodenum secretory cell,CL:1001589,endocrine-system-v1
+small intestine secretory cell,CL:1001598,digestive-system-v1.0-draft-20251118
+cerebral cortex endothelial cell,CL:1001602,integumentary system-v1.0-draft-20260106
+bone marrow hematopoietic cell,CL:1001610,immune and lymphatic system-v1.0-draft-20260106
+decidual cell,CL:2000002,female-reproductive-v
+dermis blood vessel endothelial cell,CL:2000010,integumentary system-v1.0-draft-20260106
+dermis lymphatic vessel endothelial cell,CL:2000011,immune and lymphatic system-v1.0-draft-20260106 | integumentary system-v1.0-draft-20260106
+sebaceous gland cell,CL:2000021,integumentary system-v1.0-draft-20260106
+hypothalamus cell,CL:2000030,immune and lymphatic system-v1.0-draft-20260106
+liver dendritic cell,CL:2000055,digestive-system-v1.0-draft-20251118 | immune and lymphatic system-v1.0-draft-20260106
+placental villous trophoblast,CL:2000060,female-reproductive-v
+direct pathway medium spiny neuron,CL:4023026,nervous-system-v1
+arachnoid barrier cell,CL:4023097,immune and lymphatic system-v1.0-draft-20260106
+pulmonary capillary endothelial cell,CL:4028001,cardiovascular-system-v1 | endocrine-system-v1
+"effector memory CD45RA-positive, alpha-beta T cell, terminally differentiated",CL:4030002,immune and lymphatic system-v1.0-draft-20260106
+renal cortical fibroblast,CL:4030025,urinary-system-v1.0-draft-251115
+cycling endothelial cell of lymphatic vessel,CL:4033079,pulmonary-system-v1.0-draft-20251110
+cervicothoracic ganglion TH neuron,CL:4033114,immune and lymphatic system-v1.0-draft-20260106
+mesenchymal stem cell of apical papilla,CL:4040005,digestive-system-v1.0-draft-20251118
+immune oligodendroglia,CL:4042031,immune and lymphatic system-v1.0-draft-20260106
+CGRP-expressing neuron,CL:4042034,immune and lymphatic system-v1.0-draft-20260106
+fetal artery endothelial cell,CL:4047006,immune and lymphatic system-v1.0-draft-20260106 | integumentary system-v1.0-draft-20260106
+intestinal lamina propria fibroblast,CL:4047023,immune and lymphatic system-v1.0-draft-20260106
+smooth muscle cell of stomach,CL:4047034,nervous-system-v1
+type 2 interganglionic glia,CL:4047044,immune and lymphatic system-v1.0-draft-20260106
+type 3 mucosal glia,CL:4047045,immune and lymphatic system-v1.0-draft-20260106
+syncytial cell,CL:4052002,integumentary system-v1.0-draft-20260106
+intestinal villus capillary endothelial cell,CL:4052003,digestive-system-v1.0-draft-20251118
+subepithelial intestinal fibroblast,CL:4052007,immune and lymphatic system-v1.0-draft-20260106
+granzyme K-associated CD8 T cell,CL:4052021,immune and lymphatic system-v1.0-draft-20260106
+spinous cell,CL:4052060,integumentary system-v1.0-draft-20260106
+epidermal keratinocyte,CL:4052061,integumentary system-v1.0-draft-20260106
+nail bed keratinocyte,CL:4052063,integumentary system-v1.0-draft-20260106
+nail matrix keratinocyte,CL:4052064,integumentary system-v1.0-draft-20260106
+hair follicle dermal stem cell,CL:4072103,integumentary system-v1.0-draft-20260106
+suprabasal cell,CL:7770004,integumentary system-v1.0-draft-20260106
