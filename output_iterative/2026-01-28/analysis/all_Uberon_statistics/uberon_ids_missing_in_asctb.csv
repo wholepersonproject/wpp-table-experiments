@@ -1,0 +1,197 @@
+AS_ID,WPP_LABELS,WPP_SOURCES
+UBERON:0000007,adenohypophysis | pituitary gland,endocrine-system
+UBERON:0000011,parasympathetic nervous system | parasymphathetic nerve,nervous-system
+UBERON:0000013,sympathetic nerve | sympathetic nervous system,nervous-system
+UBERON:0000033,head | neck,nervous-system
+UBERON:0000043,fibroblast | tendon,fascia-system
+UBERON:0000057,external urethral sphincter | internal urethral sphincter | urethra,male-reproductive-system | nervous-system
+UBERON:0000085,ampulla of fallopian tube | morula,female-reproductive-system
+UBERON:0000088,blastocyst | trophoblast,female-reproductive-system
+UBERON:0000160,enterocyte | enterocyte of epithelium of large intestine | goblet cell | intestine | stem cell,digestive-system
+UBERON:0000307,ampulla of fallopian tube | blastula,female-reproductive-system
+UBERON:0000310,breast | intercostal nerve | mammary gland | mammary gland connective tissue | mammary gland smooth muscle,female-reproductive-system
+UBERON:0000325,gastric gland | stomach,nervous-system
+UBERON:0000344,connective tissue | mucosa,immune-and-lymphatic-system
+UBERON:0000358,blastocyst | trophoblast,female-reproductive-system
+UBERON:0000382,apocrine sweat gland | skin apocrine gland,integumentary-system
+UBERON:0000388,epiglottis | taste bud,nervous-system
+UBERON:0000407,eccrine sweat gland | sympathetic trunk,integumentary-system
+UBERON:0000420,myoepithelium | skin apocrine gland,integumentary-system
+UBERON:0000460,major vestibular gland | mammalian vulva,female-reproductive-system
+UBERON:0000473,seminal vesicle | seminiferous tubule of testis | testis,male-reproductive-system
+UBERON:0000483,epithelium | nail,integumentary-system
+UBERON:0000913,interstitial fluid,fascia-system
+UBERON:0000974,head | neck | sternocleidomastoid,nervous-system
+UBERON:0000989,corpus cavernosum penis | corpus spongiosum of penis | ischiocavernosus muscle | male bulbospongiosus muscle | penis,male-reproductive-system
+UBERON:0000997,major vestibular gland | mammalian vulva,female-reproductive-system
+UBERON:0000998,seminal vesicle | testis,male-reproductive-system
+UBERON:0000999,ejaculatory duct | smooth muscle tissue layer of ejaculatory duct,male-reproductive-system
+UBERON:0001000,muscular coat of vas deferens | vas deferens,male-reproductive-system
+UBERON:0001005,bronchus | respiratory airway | trachea,pulmonary-system
+UBERON:0001103,diaphragm | respiratory system muscle,nervous-system
+UBERON:0001111,intercostal muscle | thoracic cavity,pulmonary-system
+UBERON:0001134,biceps femoris | clitoris | female reproductive system | lung | muscle spindle | perineal muscle | rectus femoris | sartorius muscle | semimembranosus muscle | semitendinosus | skeletal muscle tissue | vastus intermedius | vastus lateralis | vastus medialis,female-reproductive-system | muscular-system | nervous-system | pulmonary-system
+UBERON:0001143,hepatic vein | venous system,﻿cardiovascular-system
+UBERON:0001211,Peyer's Patches | immune system,immune-and-lymphatic-system
+UBERON:0001235,adrenal cortex | zona fasciculata of adrenal gland | zona glomerulosa of adrenal gland | zona reticularis of adrenal gland,endocrine-system | female-reproductive-system | male-reproductive-system
+UBERON:0001236,adrenal medulla | zona reticularis of adrenal gland,female-reproductive-system
+UBERON:0001287,kidney | proximal convoluted tubule,dental-and-craniofacial-system | skeletal-system
+UBERON:0001301,epididymis | epididymis smooth muscle,male-reproductive-system
+UBERON:0001333,male urethra | male urethral meatus,male-reproductive-system
+UBERON:0001343,seminiferous tubule of testis | testis,male-reproductive-system
+UBERON:0001456,face | orbicularis oculi muscle,dental-and-craniofacial-system | nervous-system
+UBERON:0001484,articular capsule,fascia-system
+UBERON:0001570,inferior pharyngeal constrictor | pharynx,dental-and-craniofacial-system | nervous-system
+UBERON:0001573,styloglossus | tongue,dental-and-craniofacial-system | nervous-system
+UBERON:0001604,levator palpebrae superioris | upper eyelid,dental-and-craniofacial-system | nervous-system
+UBERON:0001607,iris | sphincter pupillae,dental-and-craniofacial-system | nervous-system
+UBERON:0001629,carotid body | chemoreceptor,nervous-system
+UBERON:0001637,artery | perineal artery,male-reproductive-system
+UBERON:0001638,perineal vein | vein,male-reproductive-system
+UBERON:0001691,Meissner's corpuscle | Merkel nerve ending | external ear,nervous-system
+UBERON:0001697,inferior oblique extraocular muscle | interior rectus extraocular muscle | lacrimal gland | lateral rectus extra-ocular muscle | medial rectus extraocular muscle | orbit of skull | superior oblique extraocular muscle | superior rectus extraocular muscle,dental-and-craniofacial-system | nervous-system
+UBERON:0001705,epithelium | nail,integumentary-system
+UBERON:0001709,Meissner's corpuscle | Merkel nerve ending | upper jaw region,dental-and-craniofacial-system | nervous-system
+UBERON:0001710,Meissner's corpuscle | Merkel nerve ending | lower jaw region,dental-and-craniofacial-system | nervous-system
+UBERON:0001712,levator palpebrae superioris | upper eyelid,dental-and-craniofacial-system | nervous-system
+UBERON:0001727,anterior part of tongue | epiglottis | posterior part of tongue | taste bud,dental-and-craniofacial-system | nervous-system
+UBERON:0001729,nociceptor nerve ending | oropharynx,dental-and-craniofacial-system | nervous-system
+UBERON:0001737,laryngeal intrinsic muscle | larynx,nervous-system
+UBERON:0001744,lymphoid tissue,immune-and-lymphatic-system
+UBERON:0001756,Meissner's corpuscle | Merkel nerve ending | middle ear | stapedius muscle | tensor tympani,nervous-system
+UBERON:0001815,lumbosacral nerve plexus | sacral nerve plexus,female-reproductive-system | male-reproductive-system
+UBERON:0001816,autonomic nerve plexus | hypogastric nerve,nervous-system
+UBERON:0001817,lacrimal gland | orbit of skull,dental-and-craniofacial-system | nervous-system
+UBERON:0001844,cervical spinal cord | phrenic nerve,nervous-system
+UBERON:0001866,sebaceous gland | sebum,integumentary-system
+UBERON:0001875,globus pallidus | medial globus pallidus,nervous-system
+UBERON:0001886,choroid plexus | fourth ventricle | left lateral ventricle | right lateral ventricle | third ventricle,nervous-system
+UBERON:0001969,blood | blood plasma,female-reproductive-system
+UBERON:0002017,hepatic portal system | portal vein,﻿cardiovascular-system
+UBERON:0002019,accessory XI nerve | cranial nerve,nervous-system
+UBERON:0002045,cuneate nucleus | medulla oblongata,nervous-system
+UBERON:0002053,adrenal cortex | zona glomerulosa of adrenal gland,endocrine-system
+UBERON:0002054,adrenal cortex | zona fasciculata of adrenal gland,endocrine-system
+UBERON:0002055,adrenal cortex | adrenal medulla | zona reticularis of adrenal gland,endocrine-system | female-reproductive-system | male-reproductive-system
+UBERON:0002060,arterial system | femoral artery,﻿cardiovascular-system
+UBERON:0002110,epithelial cell | gallbladder,digestive-system
+UBERON:0002196,adenohypophysis | pituitary gland,endocrine-system
+UBERON:0002224,external intercostal muscle | intercostal muscle | internal intercostal muscle | thoracic cavity,pulmonary-system
+UBERON:0002244,lung | thoracic cavity,nervous-system
+UBERON:0002298,brainstem | substantia nigra,nervous-system
+UBERON:0002354,cardiac Purkinje fiber | cardiac muscle tissue of ventricle,﻿cardiovascular-system
+UBERON:0002362,arachnoid mater | arachnoid villus,nervous-system
+UBERON:0002366,bulbo-urethral gland | prostate gland,male-reproductive-system
+UBERON:0002411,clitoris | corpus cavernosum clitoridis | deep dorsal vein of clitoris | dorsal artery of clitoris | female reproductive system,female-reproductive-system
+UBERON:0002418,cartilage tissue,fascia-system
+UBERON:0002481,bone marrow | bone tissue | cranial skeletal system | skeletal system,dental-and-craniofacial-system | endocrine-system | skeletal-system
+UBERON:0002521,elastic tissue,fascia-system
+UBERON:0002550,anterior hypothalamic region | hypothalamus,nervous-system
+UBERON:0002748,medial lemniscus of medulla | medulla oblongata,nervous-system
+UBERON:0002770,posterior hypothalamic region | sympathetic nerve,dental-and-craniofacial-system | nervous-system
+UBERON:0003425,kidney | renal lymph node,urinary-system
+UBERON:0003444,pelvis nerve | pudendal nerve,female-reproductive-system | male-reproductive-system
+UBERON:0003570,ciliary epithelium | respiratory system connective tissue,immune-and-lymphatic-system
+UBERON:0003584,breast | mammary gland connective tissue,female-reproductive-system
+UBERON:0003592,bronchus connective tissue | ciliary epithelium,immune-and-lymphatic-system
+UBERON:0003615,lung | lung elastic tissue,pulmonary-system
+UBERON:0003672,dentition | nociceptor nerve ending,dental-and-craniofacial-system | nervous-system
+UBERON:0003679,mouth floor | sublingual gland | submandibular gland,dental-and-craniofacial-system | nervous-system
+UBERON:0003700,jaw region | temporomandibular joint,dental-and-craniofacial-system | nervous-system
+UBERON:0003708,baroreceptor | carotid sinus,nervous-system
+UBERON:0003718,muscle spindle | skeletal muscle tissue,nervous-system
+UBERON:0003719,Pacinian corpuscle | dermis,nervous-system
+UBERON:0003727,breast | intercostal nerve,female-reproductive-system
+UBERON:0003831,diaphragm | respiratory system muscle,nervous-system
+UBERON:0003992,fourth ventricle | fourth ventricle lateral aperture,nervous-system
+UBERON:0003993,interventricular foramen of CNS | ventricular system of central nervous system,nervous-system
+UBERON:0004019,arch of aorta | baroreceptor | carotid sinus | vascular system,nervous-system | ﻿cardiovascular-system
+UBERON:0004224,muscular coat of vas deferens | vas deferens,male-reproductive-system
+UBERON:0004235,breast | mammary gland smooth muscle,female-reproductive-system
+UBERON:0004295,sympathetic nerve trunk | thoracic sympathetic nerve trunk,male-reproductive-system
+UBERON:0004449,arterial system | cerebral artery,﻿cardiovascular-system
+UBERON:0004490,cardiac muscle tissue of atrium | heart,﻿cardiovascular-system
+UBERON:0004572,anterior tibial artery | aorta | arterial system | blood | brachial artery | brachiocephalic artery | capillary | celiac trunk | cerebral artery | common hepatic artery | descending aorta | femoral artery | gastroduodenal artery | ileocolic artery | iliac artery | inferior mesenteric artery | left colic artery | left common carotid artery plus branches | left gastric artery | left gastroepiploic artery | left hepatic artery | left renal artery | left subclavian artery | middle colic artery | popliteal artery | posterior tibial artery | proper hepatic artery | pulmonary arteriole | pulmonary artery | pulmonary capillary | radial artery | renal afferent arteriole | renal efferent arteriole | renal glomerulus | right colic artery | right common carotid artery plus branches | right gastric artery | right gastroepiploic artery | right hepatic artery | right renal artery | right subclavian artery | sagittal sinus | sigmoid artery | splenic artery | superficial palmar arch | superior mesenteric artery | ulnar artery | vascular system,nervous-system | ﻿cardiovascular-system
+UBERON:0004582,anterior tibial vein | anterior vena cava | axillary vein | basilic vein | brachial vein | capillary | cephalic vein | external jugular vein | femoral vein | hepatic vein | iliac vein | inferior vena cava | internal jugular vein | kidney arcuate vein | left gastric vein | left gastroepiploic vein | left renal vein | popliteal vein | portal venous system | posterior tibial vein | pulmonary vein | pulmonary venule | renal interlobular vein | right gastric vein | right gastroepiploic vein | right renal vein | subclavian vein | superior mesenteric vein | vascular system | venous system,nervous-system | ﻿cardiovascular-system
+UBERON:0004713,corpus cavernosum penis | penis,male-reproductive-system
+UBERON:0004821,lung | pulmonary alveolus epithelium,pulmonary-system
+UBERON:0004835,epididymis | epididymis smooth muscle,male-reproductive-system
+UBERON:0004863,sympathetic nerve trunk | thoracic sympathetic nerve trunk,male-reproductive-system
+UBERON:0004918,internal urethral sphincter | urethra,male-reproductive-system
+UBERON:0004919,external urethral sphincter | urethra,nervous-system
+UBERON:0005281,interventricular foramen of CNS | ventricular system of central nervous system,nervous-system
+UBERON:0005609,arterial system | iliac artery,﻿cardiovascular-system
+UBERON:0005610,iliac vein | venous system,﻿cardiovascular-system
+UBERON:0005769,basement membrane of epithelium | skin of body,integumentary-system
+UBERON:0006328,laryngeal intrinsic muscle | larynx,nervous-system
+UBERON:0006329,pharynx | superior pharyngeal constrictor,dental-and-craniofacial-system | nervous-system
+UBERON:0006562,inferior pharyngeal constrictor | middle pharyngeal constrictor | pharynx | stylopharyngeus muscle | superior pharyngeal constrictor,dental-and-craniofacial-system | nervous-system
+UBERON:0006608,clitoris | corpus cavernosum clitoridis,female-reproductive-system
+UBERON:0006637,arterial system | celiac trunk,﻿cardiovascular-system
+UBERON:0006720,jaw region | pterygoid muscle,dental-and-craniofacial-system | nervous-system
+UBERON:0006799,glandular epithelium | sebaceous gland,integumentary-system
+UBERON:0006915,skin of body | stratified squamous epithelium,integumentary-system
+UBERON:0007377,eccrine sweat gland | stratum compactum of dermis,integumentary-system
+UBERON:0007632,Barrington's nucleus | pons,nervous-system
+UBERON:0008243,trapezius muscle | upper back muscle,nervous-system
+UBERON:0008877,epidermal-dermal junction | skin epidermis,integumentary-system
+UBERON:0008982,fascia | pain receptor cell | superficial fascia,fascia-system
+UBERON:0008998,capillary of brain | vasculature of brain,nervous-system
+UBERON:0009773,kidney | renal tubule,urinary-system
+UBERON:0010032,anterior part of tongue | taste bud,dental-and-craniofacial-system | nervous-system
+UBERON:0010033,posterior part of tongue | taste bud,dental-and-craniofacial-system | nervous-system
+UBERON:0010194,capillary | hepatic portal system | ileocolic vein | inferior mesenteric vein | intrahepatic branch of portal vein | left colic vein | middle colic vein | portal vein | right colic vein | sigmoid vein | splenic vein | superior mesenteric vein,﻿cardiovascular-system
+UBERON:0010211,connective tissue cell | granulation tissue | skin of body,fascia-system | integumentary-system
+UBERON:0010323,bone tissue | cranial skeletal system | mandible,dental-and-craniofacial-system
+UBERON:0010417,lymph node | lymph node T cell domain,immune-and-lymphatic-system
+UBERON:0010749,middle pharyngeal constrictor | pharynx,dental-and-craniofacial-system | nervous-system
+UBERON:0011183,corpus spongiosum of penis | penis,male-reproductive-system
+UBERON:0011236,deep fascia,fascia-system
+UBERON:0011325,glossopharyngeal nerve | pharyngeal nerve plexus | vagus nerve,dental-and-craniofacial-system | nervous-system
+UBERON:0011388,male bulbospongiosus muscle | penis | perineal muscle,male-reproductive-system
+UBERON:0011595,jaw region | masseter muscle | pterygoid muscle | temporalis muscle | temporomandibular joint,dental-and-craniofacial-system | nervous-system
+UBERON:0011818,fascia | myofibroblast cell | superficial fascia,fascia-system
+UBERON:0011825,loose connective tissue,fascia-system
+UBERON:0011860,collection of collagen fibrils,fascia-system
+UBERON:0011900,myofibroblast cell | perimysium,fascia-system
+UBERON:0011932,pilosebaceous unit | sebaceous gland | skin of body,integumentary-system
+UBERON:0012118,infraspinatus tendon,fascia-system
+UBERON:0012177,apocrine sweat gland | myoepithelium | skin apocrine gland,integumentary-system
+UBERON:0012241,male urethra | male urethral meatus,male-reproductive-system
+UBERON:0012449,mechanoreceptor | rectum | wall of urinary bladder,nervous-system
+UBERON:0012450,Meissner's corpuscle | external ear | lower jaw region | middle ear | skin of forehead | skin of scalp | upper jaw region,dental-and-craniofacial-system | nervous-system
+UBERON:0012456,Merkel nerve ending | external ear | lower jaw region | middle ear | skin of forehead | skin of scalp | upper jaw region,dental-and-craniofacial-system | nervous-system
+UBERON:0013153,arachnoid mater | arachnoid villus,nervous-system
+UBERON:0013161,choroid plexus | left lateral ventricle,nervous-system
+UBERON:0013162,choroid plexus | right lateral ventricle,nervous-system
+UBERON:0013479,lung | lung endothelium,pulmonary-system
+UBERON:0013489,superficial cervical fascia,fascia-system
+UBERON:0014931,lymph node | periungual skin,integumentary-system
+UBERON:0015233,nucleus of dorsal thalamus | ventral lateral nucleus of thalamus,nervous-system
+UBERON:0015704,arterial system | sagittal sinus | superior sagittal sinus,nervous-system | ﻿cardiovascular-system
+UBERON:0015717,ejaculatory duct | smooth muscle tissue layer of ejaculatory duct,male-reproductive-system
+UBERON:0016475,Meissner's corpuscle | Merkel nerve ending | skin of forehead,dental-and-craniofacial-system | nervous-system
+UBERON:0016890,hepatic portal system | intrahepatic branch of portal vein,﻿cardiovascular-system
+UBERON:0018112,rectum | rectum smooth muscle tissue,nervous-system
+UBERON:0018391,carotid body | chemoreceptor,nervous-system
+UBERON:0018649,cardiac Purkinje fiber | cardiac muscle tissue of ventricle | heart,﻿cardiovascular-system
+UBERON:0035017,dentition | dermis | nociceptor nerve ending | oropharynx,dental-and-craniofacial-system | nervous-system
+UBERON:0035018,dermis | thermoreceptor,nervous-system
+UBERON:0035198,skin of body | superficial lymphatic vessel,integumentary-system
+UBERON:0035428,postcapillary venule,integumentary-system
+UBERON:0037462,hair follicle | vellus hair,integumentary-system
+UBERON:0037466,hair follicle | telogen hair,integumentary-system
+UBERON:0037467,anagen hair | hair follicle,integumentary-system
+UBERON:0039228,hepatic portal system | sigmoid vein,﻿cardiovascular-system
+UBERON:0039422,deep dorsal vein of penis | dorsal vein of penis,male-reproductive-system
+UBERON:3010202,sebaceous gland | tail base gland,integumentary-system
+UBERON:3010770,dorsal sympathetic chain,integumentary-system
+UBERON:8300000,Meissner's corpuscle | Merkel nerve ending | skin of scalp,dental-and-craniofacial-system | nervous-system
+UBERON:8410007,myenteric nerve plexus | myenteric nerve plexus of anorectum,nervous-system
+UBERON:8410069,immune system | lymphoid nodule,immune-and-lymphatic-system
+UBERON:8420000,hair of scalp,integumentary-system
+UBERON:8480001,capillary of brain | vasculature of brain,nervous-system
+UBERON:8600024,pulmonary venule | venous system,﻿cardiovascular-system
+UBERON:8920045,arterial system | right gastric artery,﻿cardiovascular-system
+UBERON:8920047,left gastroepiploic vein | portal venous system,﻿cardiovascular-system
+UBERON:8920048,portal venous system | right gastroepiploic vein,﻿cardiovascular-system

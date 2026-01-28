@@ -8,7 +8,7 @@ import re
 # CONFIG
 # --------------------
 INPUT_FOLDER = "./data/WPP Input Tables/"
-OUT_FOLDER = "./output/unique_effectors/"
+OUT_FOLDER = "./unique_effectors/"
 os.makedirs(OUT_FOLDER, exist_ok=True)
 
 # Spatial types we report (keeps column order)

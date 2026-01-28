@@ -20,10 +20,10 @@ import re
 import pandas as pd
 
 # ---------- CONFIG ----------
-tissue_input_file = "./output/analysis/all_Uberon_statistics/AS_UBERON_in_WPP.csv"
+tissue_input_file = "./analysis/all_Uberon_statistics/AS_UBERON_in_WPP.csv"
 astcb_master_file  = "./data/all_asctb_ids_and_types.csv"
-output_present_file = "./output/analysis/all_Uberon_statistics/uberon_ids_present_in_astcb.csv"
-output_missing_file = "./output/analysis/all_Uberon_statistics/uberon_ids_missing_in_asctb.csv"
+output_present_file = "./analysis/all_Uberon_statistics/uberon_ids_present_in_astcb.csv"
+output_missing_file = "./analysis/all_Uberon_statistics/uberon_ids_missing_in_asctb.csv"
 
 ID_SEPARATOR = ";"
 

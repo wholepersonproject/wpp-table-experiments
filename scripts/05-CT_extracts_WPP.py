@@ -16,7 +16,7 @@ import pandas as pd
 
 # ---------- CONFIG ----------
 input_folder = "./data/WPP Input Tables/"
-output_file = "./output/analysis/all_CT_statistics/all_CL_ids_in_WPP_by_id.csv"
+output_file = "./analysis/all_CT_statistics/all_CL_ids_in_WPP_by_id.csv"
 os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
 ID_LABEL_PAIRS_CANDIDATES = [

@@ -9,7 +9,7 @@ import sys
 # CONFIG - change only these
 # --------------------
 INPUT_FOLDER = "./data/WPP Input Tables/"   # root folder containing CSV files (will search recursively)
-OUTPUT_FOLDER = "./output/temporal_spatial_output/v7/"
+OUTPUT_FOLDER = "./temporal_spatial_output/"
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # --------------------

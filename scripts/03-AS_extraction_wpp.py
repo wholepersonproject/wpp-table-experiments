@@ -14,7 +14,7 @@ import glob
 import pandas as pd
 
 input_folder = "./data/WPP Input Tables/"
-output_tissue_file = "./output/analysis/all_Uberon_statistics/AS_UBERON_in_WPP.csv"
+output_tissue_file = "./analysis/all_Uberon_statistics/AS_UBERON_in_WPP.csv"
 
 EFFECTOR_SCALE_COLS = ["effector scale", "Effector Scale", "effector_scale", "EffectorScale"]
 TISSUE_LABEL_COLS = [

@@ -2,14 +2,17 @@
 import os
 import re
 import pandas as pd
+import sys
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 # -----------------------
 # USER CONFIG
 # -----------------------
-cl_ids_file = "./output/analysis/all_CT_statistics/all_CL_ids_in_WPP_by_id.csv"  # your extracted CL file
+cl_ids_file = "./analysis/all_CT_statistics/all_CL_ids_in_WPP_by_id.csv"  # your extracted CL file
 astcb_master_file = "./data/all_asctb_ids_and_types.csv"        # master file
-output_missing = "./output/analysis/all_CT_statistics/cl_ids_missing_in_astcb.csv"
-output_present = "./output/analysis/all_CT_statistics/cl_ids_present_in_astcb.csv"
+output_missing = "./analysis/all_CT_statistics/cl_ids_missing_in_astcb.csv"
+output_present = "./analysis/all_CT_statistics/cl_ids_present_in_astcb.csv"
 
 ASTCB_ID_COL_CANDIDATES = ["id", "ID", "asctb_id"]
 

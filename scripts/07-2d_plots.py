@@ -10,8 +10,8 @@ import matplotlib.colors as mcolors
 # --------------------------
 # Paths (adjust if needed)
 # --------------------------
-input_folder = "./output/temporal_spatial_output/v7/"
-output_folder = "./output/2d_plots/v7/"
+input_folder = "./temporal_spatial_output/"
+output_folder = "./2d_plots/"
 os.makedirs(output_folder, exist_ok=True)
 
 # --------------------------

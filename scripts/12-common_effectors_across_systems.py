@@ -8,7 +8,7 @@ import re
 # CONFIG
 # --------------------
 INPUT_FOLDER = "./data/WPP Input Tables/"
-OUT_FOLDER = "./output/common_effectors_across_systems/"
+OUT_FOLDER = "./common_effectors_across_systems/"
 os.makedirs(OUT_FOLDER, exist_ok=True)
 
 # If you use the same header-row heuristic as before:
