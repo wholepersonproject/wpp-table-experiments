@@ -102,6 +102,16 @@ def join_unique(iterable):
             seen.append(s)
     return " | ".join(seen)
 
+def find_id_column(df, candidates):
+    lowered = {c.lower(): c for c in df.columns}
+    for cand in candidates:
+        if cand in df.columns:
+            return cand
+        lc = cand.lower()
+        if lc in lowered:
+            return lowered[lc]
+    return None
+
 def main():
     # check inputs
     if not os.path.exists(tissue_input_file):
@@ -112,43 +122,22 @@ def main():
         return
 
     wpp_df = pd.read_csv(tissue_input_file, dtype=str)
-    astcb_df = pd.read_csv(astcb_master_file, dtype=str)
-
-    # detect ID column in tissue file (prefer AS_ID)
-    if "AS_ID" in wpp_df.columns:
-        wpp_id_col = "AS_ID"
-    else:
-        wpp_id_col = next((c for c in wpp_df.columns if "id" in c.lower()), None)
-
-    if wpp_id_col is None:
-        print("[ERROR] Could not find an ID-like column in tissue input file. Columns:", wpp_df.columns.tolist())
+    if "AS_ID" not in wpp_df.columns and not any("id" in c.lower() for c in wpp_df.columns):
+        print("[ERROR] Input WPP file does not appear to contain an AS_ID column.")
+        print("Columns found:", wpp_df.columns.tolist())
         return
 
-    # detect tissue label column (from tissue file only)
-    wpp_label_col = find_column(wpp_df, LABEL_COL_CANDIDATES)
+     # detect AS_ID-like column if name differs
+    wpp_id_col = "AS_ID" if "AS_ID" in wpp_df.columns else next((c for c in wpp_df.columns if "id" in c.lower()), None)
 
-    # detect tissue source columns (heuristic)
-    wpp_source_cols = detect_source_columns(wpp_df)
-
-    # build maps from canonical Uberon -> sets of labels/sources/raws seen in tissue file
+    # Build set of canonical Uberon IDs from WPP AS_ID column.
     wpp_uberon_set = set()
-    wpp_labels_map = {}
-    wpp_sources_map = {}
-    wpp_raw_map = {}
-    wpp_cl_ids = set()
     wpp_non_uberon = set()
-
+    wpp_cl_ids = set()
+    # iterate rows and split AS_ID field (may contain multiple separated by ';')
     for _, row in wpp_df.iterrows():
         raw_field = row.get(wpp_id_col)
         ids = split_ids_field(raw_field, sep=ID_SEPARATOR)
-        row_label = clean_text(row.get(wpp_label_col)) if wpp_label_col else None
-        # collect all source values for this row (concatenate columnname=value so it's clear)
-        source_values = []
-        for sc in wpp_source_cols:
-            v = clean_text(row.get(sc))
-            if v:
-                source_values.append(v)
-
         for raw in ids:
             raw_clean = clean_text(raw)
             if not raw_clean:
@@ -159,77 +148,94 @@ def main():
             norm = normalize_to_uberon(raw_clean)
             if norm:
                 wpp_uberon_set.add(norm)
-                wpp_labels_map.setdefault(norm, set())
-                if row_label:
-                    wpp_labels_map[norm].add(row_label)
-                wpp_sources_map.setdefault(norm, set())
-                if source_values:
-                    wpp_sources_map[norm].update(source_values)
-                wpp_raw_map.setdefault(norm, set()).add(raw_clean)
             else:
                 wpp_non_uberon.add(raw_clean)
 
-    # detect ASTCB ID column
-    astcb_id_col = find_column(astcb_df, ASTCB_ID_COL_CANDIDATES)
+    # 2) Load ASTCB master
+    if not os.path.exists(astcb_master_file):
+        print(f"[ERROR] ASTCB master file not found: {astcb_master_file}")
+        return
+
+    astcb_df = pd.read_csv(astcb_master_file, dtype=str)
+
+    # detect cf_asctb_type column (case-insensitive)
+    lowered_cols = {c.lower(): c for c in astcb_df.columns}
+    cf_type_col = None
+    if "cf_asctb_type" in astcb_df.columns:
+        cf_type_col = "cf_asctb_type"
+    elif "cf_asctb_type" in lowered_cols:
+        cf_type_col = lowered_cols["cf_asctb_type"]
+
+    # detect ASTCB ID column for unique-by-type counts
+    astcb_id_col = find_id_column(astcb_df, ASTCB_ID_COL_CANDIDATES)
     if astcb_id_col is None:
         astcb_id_col = next((c for c in astcb_df.columns if "id" in c.lower()), None)
         if astcb_id_col is None:
-            print("[ERROR] Could not detect ID column in ASTCB master. Columns:", astcb_df.columns.tolist())
+            print("[ERROR] Could not detect ID column in ASTCB master. Columns found:", astcb_df.columns.tolist())
             return
         print(f"[INFO] Using guessed ASTCB ID column: {astcb_id_col}")
+        # 3) Compute unique raw ID counts per cf_asctb_type (Option 1)
+    if cf_type_col:
+        astcb_df["_cf_asctb_type_norm"] = astcb_df[cf_type_col].astype(str).str.strip().str.upper().fillna("")
+        type_counts_df = (
+            astcb_df.groupby("_cf_asctb_type_norm")[astcb_id_col]
+                   .nunique()
+                   .reset_index(name="unique_id_count")
+        )
+        print("\nASTCB unique ID counts by cf_asctb_type (normalized):")
+        print(type_counts_df.to_string(index=False))
+        total_as_unique_raw = int(type_counts_df.loc[type_counts_df["_cf_asctb_type_norm"] == "AS", "unique_id_count"].values[0]) if "AS" in type_counts_df["_cf_asctb_type_norm"].values else 0
+    else:
+        print("\n[INFO] No 'cf_asctb_type' column found in ASTCB master; cannot produce unique-by-type counts.")
+        total_as_unique_raw = 0
 
-    # build canonical set of Uberons from ASTCB (use all rows; you can filter by type externally if desired)
+    # 4) Filter ASTCB to rows with type == 'AS' for canonical normalization & comparison
+    if cf_type_col:
+        astcb_filtered = astcb_df[astcb_df["_cf_asctb_type_norm"] == "AS"].copy()
+        print(f"[INFO] Filtering ASTCB to rows where {cf_type_col} == 'AS' -> {len(astcb_filtered)} rows retained.")
+    else:
+        astcb_filtered = astcb_df
+        print(f"[INFO] No {cf_type_col} column; using all ASTCB rows ({len(astcb_filtered)}) for comparison.")
+
+    # 5) Extract IDs from filtered ASTCB rows and normalize to canonical Uberon
+    astcb_raw_ids = [str(v).strip() for v in astcb_filtered[astcb_id_col].dropna().astype(str) if str(v).strip()]
     astcb_uberon_set = set()
-    for val in astcb_df[astcb_id_col].dropna().astype(str):
-        raw = val.strip()
-        if is_cl_id(raw):
+    astcb_non_uberon = set()
+    astcb_cl_ids = set()
+    for r in astcb_raw_ids:
+        if is_cl_id(r):
+            astcb_cl_ids.add(r)
             continue
-        norm = normalize_to_uberon(raw)
+        norm = normalize_to_uberon(r)
         if norm:
             astcb_uberon_set.add(norm)
+        else:
+            astcb_non_uberon.add(r)
 
-    # compare
+    # 6) Compare canonical sets
     present_ids = sorted(wpp_uberon_set & astcb_uberon_set)
     missing_ids = sorted(wpp_uberon_set - astcb_uberon_set)
 
-    # prepare rows: only using WPP labels/sources/raws
-    present_rows = []
-    for uid in present_ids:
-        present_rows.append({
-            "AS_ID": uid,
-            "WPP_LABELS": join_unique(sorted(wpp_labels_map.get(uid, []))),
-            "WPP_SOURCES": join_unique(sorted(wpp_sources_map.get(uid, []))),
-            # "WPP_RAW": join_unique(sorted(wpp_raw_map.get(uid, [])))
-        })
-
-    missing_rows = []
-    for uid in missing_ids:
-        missing_rows.append({
-            "AS_ID": uid,
-            "WPP_LABELS": join_unique(sorted(wpp_labels_map.get(uid, []))),
-            "WPP_SOURCES": join_unique(sorted(wpp_sources_map.get(uid, []))),
-            # "WPP_RAW": join_unique(sorted(wpp_raw_map.get(uid, [])))
-        })
-
-    # write outputs
+    # 7) Save present and missing (canonical IDs)
     os.makedirs(os.path.dirname(output_present_file) or ".", exist_ok=True)
     os.makedirs(os.path.dirname(output_missing_file) or ".", exist_ok=True)
 
-    pd.DataFrame(present_rows).to_csv(output_present_file, index=False)
-    pd.DataFrame(missing_rows).to_csv(output_missing_file, index=False)
+    pd.DataFrame({"Present_AS_ID": present_ids}).to_csv(output_present_file, index=False)
+    pd.DataFrame({"Missing_AS_ID": missing_ids}).to_csv(output_missing_file, index=False)
 
-    # final printed stats (exact format requested)
+    # Final requested counts (Uberon-only comparisons + Option1 total)
     total_uberon_in_wpp = len(wpp_uberon_set)
-    wpp_intersection_hra = len(present_ids)
-    only_in_wpp = len(missing_ids)
-    total_in_hra = len(astcb_uberon_set)
-    only_in_hra = max(0, total_in_hra - wpp_intersection_hra)
+    wpp_intersection_hra = len(wpp_uberon_set & astcb_uberon_set)
+    only_in_wpp = len(wpp_uberon_set - astcb_uberon_set)
+    total_in_hra_raw_unique = total_as_unique_raw    # Option1 unique raw IDs for cf_asctb_type == "AS"
+    only_in_hra_canonical = total_in_hra_raw_unique - wpp_intersection_hra
 
+    print("\n=== Final counts ===")
     print(f"- Total Uberon ids in WPP => {total_uberon_in_wpp}")
     print(f"- WPP intersection HRA => {wpp_intersection_hra}")
-    print(f"- Only in WPP => {only_in_wpp}")
-    print(f"- Total in HRA => {total_in_hra}")
-    print(f"- Only in HRA => {only_in_hra}")
+    print(f"- Only in WPP => {only_in_wpp}")    
+    print(f"- Total in HRA => {total_in_hra_raw_unique}")
+    print(f"- Only in HRA => {only_in_hra_canonical}")
 
 if __name__ == "__main__":
     main()

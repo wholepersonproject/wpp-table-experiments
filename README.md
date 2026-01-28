@@ -2,6 +2,26 @@
 Experimental repo for WPP tables
 Descriptions according to the script number
 
+## Execution
+
+### Individual Runs Example
+
+> SCRIPT_ROOT="$(pwd)"
+> WEEK="$(ls -1d "${SCRIPT_ROOT}/output_iterative/"* | tail -n1)"
+
+> # pick a python (venv preferred, else system)
+> if [ -x "${SCRIPT_ROOT}/.venv/bin/python" ]; then PY="${SCRIPT_ROOT}/.venv/bin/python"; elif [ -x "${SCRIPT_ROOT}/.venv/Scripts/python" ]; then PY="${SCRIPT_ROOT}/.venv/Scripts/python"; else PY="$(command -v python3 || command -v python)"; fi
+
+> # run (use absolute script path, run with CWD=WEEK)
+> (cd "$WEEK" && PYTHONIOENCODING=utf-8 "$PY" "$SCRIPT_ROOT/scripts/script file name goes here.py") 2>&1 | tee output_logs/manual_06_$(date +%Y%m%d_%H%M%S).log
+
+### Run All the Scripts
+
+IN the bash terminal execute these commands - 
+
+> chmod +x run.sh
+> ./run.sh
+
 ## 01 - All ids and types from asctb and HRA kg are extracted in this table
 > Output - data/all_asctb_ids_with_types.csv
 

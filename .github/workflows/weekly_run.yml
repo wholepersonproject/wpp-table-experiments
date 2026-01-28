@@ -1,0 +1,55 @@
+name: weekly-run
+
+# Runs on schedule (cron) and manually
+on:
+  workflow_dispatch: {}            # manual run
+  schedule:
+    # change this cron to your desired weekly time (GitHub actions cron is UTC)
+    # example below: run weekly on Monday at 08:00 UTC
+    - cron: '0 08 * * MON'
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Cache pip wheel downloads
+        uses: actions/cache@v4
+        id: pip-cache
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Ensure run.sh is executable
+        run: chmod +x ./run.sh
+
+      - name: Run pipeline
+        # keep the environment small; run.sh will create its own .venv and run scripts
+        run: |
+          ./run.sh
+        # set a reasonably long timeout so big runs don't get killed
+        timeout-minutes: 60
+
+      - name: Upload outputs artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: outputs-${{ github.run_id }}
+          path: |
+            output_by_week/**
+            output/**     # in case you switched to 'output' base
+            output_logs/**
+
+      - name: List artifacts (quick debug)
+        run: |
+          echo "Artifacts uploaded for run $GITHUB_RUN_ID"

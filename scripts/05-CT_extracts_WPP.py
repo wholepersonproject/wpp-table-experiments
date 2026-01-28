@@ -13,7 +13,9 @@ Columns:
 import os
 import glob
 import pandas as pd
-
+import sys 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 # ---------- CONFIG ----------
 input_folder = "./data/WPP Input Tables/"
 output_file = "./analysis/all_CT_statistics/all_CL_ids_in_WPP_by_id.csv"
