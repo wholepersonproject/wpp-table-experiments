@@ -46,7 +46,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add output_iterative output output_logs || true
+          git add output_iterative output_logs || true
 
           if git diff --cached --quiet; then
             echo "No output changes to commit"
