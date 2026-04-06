@@ -1,0 +1,15 @@
+﻿file,Organ,AS,FTU,CT,B,Total_unique_labels_across_spatial
+Dental_and_Craniofacial_System.csv,0,17,0,5,0,22
+Digestive_System.csv,23,10,0,14,0,34
+Endocrine_System.csv,2,4,0,32,0,40
+Fascia_System.csv,7,19,0,11,0,28
+Female_Reproductive_System.csv,5,18,1,11,0,34
+Immune_and_Lymphatic_System.csv,5,9,0,180,0,193
+Integumentary_System.csv,6,34,2,63,0,102
+Male_Reproductive_System.csv,3,15,0,7,0,25
+Muscular_System.csv,0,0,0,2,0,2
+Nervous_System.csv,0,35,0,5,0,40
+Pulmonary_System.csv,22,13,1,7,0,40
+Skeletal_System.csv,0,1,0,4,0,5
+Urinary_System.csv,7,8,0,18,0,33
+﻿Cardiovascular_System.csv,0,9,0,6,0,15
