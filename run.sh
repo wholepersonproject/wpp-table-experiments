@@ -84,7 +84,7 @@ fi
 # Download sheets into week data dir (if sheets file exists)
 if [ -f "${SHEETS_LIST}" ]; then
   echo "Downloading sheets -> ${WEEK_DATA_DIR}"
-  while IFS=, read -r fname url || [ -n "${fname:-}" ]; do
+  while IFS=, read -r doname fname url || [ -n "${fname:-}" ]; do
     fname="$(echo "${fname:-}" | xargs)"
     url="$(echo "${url:-}" | xargs)"
     [ -z "${fname}" ] || [ -z "${url}" ] && continue
