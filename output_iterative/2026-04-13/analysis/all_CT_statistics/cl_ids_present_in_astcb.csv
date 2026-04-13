@@ -7,7 +7,7 @@ T cell,CL:0000084,immune-and-lymphatic-system | integumentary-system
 mast cell,CL:0000097,fascia-system
 Motor neurons | motor neuron,CL:0000100,digestive-system | muscular-system | nervous-system
 sensory neuron | sensory neuron of dorsal root gangli,CL:0000101,integumentary-system | nervous-system
-Endothelial cell | endothelial cell,CL:0000115,endocrine-system | fascia-system | integumentary-system | ﻿cardiovascular-system
+Endothelial cell | endothelial cell,CL:0000115,cardiovascular-system | endocrine-system | fascia-system | integumentary-system | ﻿cardiovascular-system
 astrocyte,CL:0000127,nervous-system
 oligodendrocyte,CL:0000128,nervous-system
 adipocyte,CL:0000136,fascia-system
@@ -19,7 +19,7 @@ pancreatic D cell,CL:0000173,endocrine-system
 luteal cell,CL:0000175,female-reproductive-system
 Hepatocyte | Hepatocytes | hepatocyte,CL:0000182,digestive-system | endocrine-system | immune-and-lymphatic-system
 myofibroblast cell,CL:0000186,fascia-system
-smooth muscle cell,CL:0000192,digestive-system | endocrine-system | integumentary-system | muscular-system | nervous-system | pulmonary-system | ﻿cardiovascular-system
+smooth muscle cell,CL:0000192,cardiovascular-system | digestive-system | endocrine-system | integumentary-system | muscular-system | nervous-system | pulmonary-system | ﻿cardiovascular-system
 erythrocyte,CL:0000232,female-reproductive-system
 platelet,CL:0000233,endocrine-system
 macrophage,CL:0000235,fascia-system | immune-and-lymphatic-system
@@ -51,7 +51,7 @@ pericyte,CL:0000669,integumentary-system
 M cell of gut,CL:0000682,immune-and-lymphatic-system
 dopaminergic neuron,CL:0000700,digestive-system
 leukocyte,CL:0000738,integumentary-system
-cardiac muscle cell,CL:0000746,nervous-system | ﻿cardiovascular-system
+cardiac muscle cell,CL:0000746,cardiovascular-system | nervous-system | ﻿cardiovascular-system
 erythroid lineage cell,CL:0000764,immune-and-lymphatic-system
 eosinophil,CL:0000771,immune-and-lymphatic-system
 Neutrophils | neutrophil,CL:0000775,immune-and-lymphatic-system | integumentary-system

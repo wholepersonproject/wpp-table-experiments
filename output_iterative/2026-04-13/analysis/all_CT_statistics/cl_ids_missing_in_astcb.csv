@@ -22,7 +22,6 @@ goblet cell,CL:0000160,digestive-system
 parietal cell,CL:0000162,digestive-system | endocrine-system
 chromaffin cell,CL:0000166,endocrine-system
 Leydig cell,CL:0000178,immune-and-lymphatic-system | male-reproductive-system
-pain receptor cell,CL:0000198,fascia-system
 auditory hair cell,CL:0000202,dental-and-craniofacial-system | nervous-system
 olfactory receptor cell,CL:0000207,dental-and-craniofacial-system | nervous-system
 photoreceptor cell,CL:0000210,dental-and-craniofacial-system | nervous-system
@@ -96,8 +95,8 @@ T-helper 9 cell,CL:0002061,immune-and-lymphatic-system
 tanycyte,CL:0002085,endocrine-system
 bone marrow cell,CL:0002092,immune-and-lymphatic-system
 CD27-negative gamma-delta T cell,CL:0002125,immune-and-lymphatic-system
-regular atrial cardiac myocyte,CL:0002129,endocrine-system | ﻿cardiovascular-system
-regular ventricular cardiac myocyte,CL:0002131,endocrine-system | ﻿cardiovascular-system
+regular atrial cardiac myocyte,CL:0002129,cardiovascular-system | endocrine-system | ﻿cardiovascular-system
+regular ventricular cardiac myocyte,CL:0002131,cardiovascular-system | endocrine-system | ﻿cardiovascular-system
 endothelial cell of vascular tree,CL:0002139,integumentary-system
 skin sebocyte,CL:0002140,integumentary-system
 clear cell of eccrine sweat gland,CL:0002146,integumentary-system
@@ -138,11 +137,13 @@ hair follicle cell,CL:0002559,integumentary-system
 inner root sheath cell,CL:0002560,integumentary-system
 outer root sheath cell,CL:0002561,integumentary-system
 intestinal epithelial cell,CL:0002563,immune-and-lymphatic-system
+nucleus pulposus cell of intervertebral disc,CL:0002564,fascia-system
 smooth muscle cell of trachea,CL:0002600,pulmonary-system
 glomerular capillary,CL:0004212,endocrine-system
 ghrelin secreting cell,CL:0005018,endocrine-system
 enteric neuron,CL:0007011,immune-and-lymphatic-system
 skeletal muscle fiber,CL:0008002,endocrine-system | female-reproductive-system | male-reproductive-system | muscular-system | nervous-system
+endocardial cushion cell,CL:0008022,fascia-system
 alpha motor neuron,CL:0008038,nervous-system
 lower motor neuron,CL:0008039,muscular-system | nervous-system
 salivary gland cell,CL:0009005,digestive-system
@@ -170,12 +171,12 @@ stem cell of epidermis,CL:1000428,integumentary-system
 epithelial cell of sweat gland,CL:1000448,integumentary-system
 cholangiocyte,CL:1000488,digestive-system
 kidney glomerular epithelial cell,CL:1000510,endocrine-system
-juxtaglomerular complex cell,CL:1000618,endocrine-system | ﻿cardiovascular-system
-kidney proximal convoluted tubule epithelial cell,CL:1000838,dental-and-craniofacial-system | endocrine-system | skeletal-system | urinary-system | ﻿cardiovascular-system
+juxtaglomerular complex cell,CL:1000618,cardiovascular-system | endocrine-system | ﻿cardiovascular-system
+kidney proximal convoluted tubule epithelial cell,CL:1000838,cardiovascular-system | dental-and-craniofacial-system | endocrine-system | skeletal-system | urinary-system | ﻿cardiovascular-system
 kidney proximal straight tubule epithelial cell,CL:1000839,urinary-system
 kidney arterial blood vessel cell,CL:1000891,urinary-system
 kidney loop of Henle epithelial cell,CL:1000909,urinary-system
-kidney afferent arteriolar cell,CL:1001006,endocrine-system | ﻿cardiovascular-system
+kidney afferent arteriolar cell,CL:1001006,cardiovascular-system | endocrine-system | ﻿cardiovascular-system
 sensory neuron of dorsal root ganglion,CL:1001451,nervous-system
 parvocellular neurosecretory cell,CL:1001505,endocrine-system | female-reproductive-system | male-reproductive-system
 stomach enteroendocrine cell,CL:1001517,immune-and-lymphatic-system
@@ -197,7 +198,7 @@ liver dendritic cell,CL:2000055,digestive-system | immune-and-lymphatic-system
 placental villous trophoblast,CL:2000060,female-reproductive-system
 direct pathway medium spiny neuron,CL:4023026,nervous-system
 arachnoid barrier cell,CL:4023097,immune-and-lymphatic-system
-pulmonary capillary endothelial cell,CL:4028001,endocrine-system | ﻿cardiovascular-system
+pulmonary capillary endothelial cell,CL:4028001,cardiovascular-system | endocrine-system | ﻿cardiovascular-system
 "effector memory CD45RA-positive, alpha-beta T cell, terminally differentiated",CL:4030002,immune-and-lymphatic-system
 renal cortical fibroblast,CL:4030025,urinary-system
 cycling endothelial cell of lymphatic vessel,CL:4033079,pulmonary-system
