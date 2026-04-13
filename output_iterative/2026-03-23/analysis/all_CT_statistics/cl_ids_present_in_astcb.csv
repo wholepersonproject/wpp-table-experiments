@@ -1,0 +1,125 @@
+CL_LABELS,CL_IDs,WPP_SOURCES
+stem cell,CL:0000034,digestive-system | integumentary-system
+hematopoietic stem cell,CL:0000037,immune-and-lymphatic-system
+fibroblast,CL:0000057,fascia-system
+epithelial cell,CL:0000066,digestive-system | immune-and-lymphatic-system
+T cell,CL:0000084,immune-and-lymphatic-system | integumentary-system
+mast cell,CL:0000097,fascia-system
+Motor neurons | motor neuron,CL:0000100,digestive-system | muscular-system | nervous-system
+sensory neuron | sensory neuron of dorsal root gangli,CL:0000101,integumentary-system | nervous-system
+Endothelial cell | endothelial cell,CL:0000115,endocrine-system | fascia-system | integumentary-system | ﻿cardiovascular-system
+astrocyte,CL:0000127,nervous-system
+oligodendrocyte,CL:0000128,nervous-system
+adipocyte,CL:0000136,fascia-system
+melanocyte,CL:0000148,integumentary-system
+neuroendocrine cell,CL:0000165,immune-and-lymphatic-system
+type B cell of pancreas,CL:0000169,endocrine-system
+pancreatic A cell,CL:0000171,endocrine-system
+pancreatic D cell,CL:0000173,endocrine-system
+luteal cell,CL:0000175,female-reproductive-system
+Hepatocyte | Hepatocytes | hepatocyte,CL:0000182,digestive-system | endocrine-system | immune-and-lymphatic-system
+myofibroblast cell,CL:0000186,fascia-system
+smooth muscle cell,CL:0000192,digestive-system | endocrine-system | integumentary-system | muscular-system | nervous-system | pulmonary-system | ﻿cardiovascular-system
+erythrocyte,CL:0000232,female-reproductive-system
+platelet,CL:0000233,endocrine-system
+macrophage,CL:0000235,fascia-system | immune-and-lymphatic-system
+B cell,CL:0000236,immune-and-lymphatic-system
+keratinocyte,CL:0000312,immune-and-lymphatic-system | integumentary-system
+follicular dendritic cell,CL:0000442,immune-and-lymphatic-system
+dendritic cell,CL:0000451,immune-and-lymphatic-system
+Langerhans cell,CL:0000453,immune-and-lymphatic-system | integumentary-system
+connective tissue type mast cell,CL:0000484,immune-and-lymphatic-system
+mucosal type mast cell,CL:0000485,immune-and-lymphatic-system | integumentary-system
+CD4-positive helper T cell,CL:0000492,immune-and-lymphatic-system | integumentary-system
+stromal cell,CL:0000499,immune-and-lymphatic-system
+theca cell,CL:0000503,female-reproductive-system
+gastrin secreting cell,CL:0000509,endocrine-system
+afferent neuron,CL:0000526,nervous-system
+neuron,CL:0000540,digestive-system | nervous-system
+lymphocyte,CL:0000542,immune-and-lymphatic-system
+T-helper 1 cell,CL:0000545,immune-and-lymphatic-system
+T-helper 2 cell,CL:0000546,immune-and-lymphatic-system
+alveolar macrophage,CL:0000583,fascia-system | immune-and-lymphatic-system
+enterocyte,CL:0000584,digestive-system
+"CD8-positive, alpha-beta T cell",CL:0000625,immune-and-lymphatic-system
+hepatic stellate cell,CL:0000632,immune-and-lymphatic-system
+basal cell,CL:0000646,integumentary-system
+kidney granular cell,CL:0000648,urinary-system
+spinous cell of epidermis,CL:0000649,immune-and-lymphatic-system | integumentary-system
+podocyte,CL:0000653,urinary-system
+pericyte,CL:0000669,integumentary-system
+M cell of gut,CL:0000682,immune-and-lymphatic-system
+dopaminergic neuron,CL:0000700,digestive-system
+leukocyte,CL:0000738,integumentary-system
+cardiac muscle cell,CL:0000746,nervous-system | ﻿cardiovascular-system
+erythroid lineage cell,CL:0000764,immune-and-lymphatic-system
+eosinophil,CL:0000771,immune-and-lymphatic-system
+Neutrophils | neutrophil,CL:0000775,immune-and-lymphatic-system | integumentary-system
+plasmacytoid dendritic cell,CL:0000784,immune-and-lymphatic-system
+plasma cell,CL:0000786,immune-and-lymphatic-system
+memory B cell,CL:0000787,immune-and-lymphatic-system
+naive B cell,CL:0000788,immune-and-lymphatic-system
+"CD8-positive, alpha-beta cytotoxic T cell",CL:0000794,immune-and-lymphatic-system
+"double-positive, alpha-beta thymocyte",CL:0000809,immune-and-lymphatic-system
+mature NK T cell,CL:0000814,immune-and-lymphatic-system
+immature B cell,CL:0000816,immune-and-lymphatic-system
+precursor B cell,CL:0000817,immune-and-lymphatic-system
+pro-B cell,CL:0000826,immune-and-lymphatic-system
+germinal center B cell,CL:0000844,immune-and-lymphatic-system
+marginal zone B cell of spleen,CL:0000845,immune-and-lymphatic-system
+thymic macrophage,CL:0000866,immune-and-lymphatic-system
+lymph node subcapsular sinus macrophage,CL:0000887,immune-and-lymphatic-system
+"naive thymus-derived CD4-positive, alpha-beta T cell",CL:0000895,immune-and-lymphatic-system
+T-helper 17 cell,CL:0000899,immune-and-lymphatic-system | integumentary-system
+"effector memory CD4-positive, alpha-beta T cell",CL:0000905,immune-and-lymphatic-system
+"CD8-positive, alpha-beta memory T cell",CL:0000909,immune-and-lymphatic-system
+immature NK T cell,CL:0000914,immune-and-lymphatic-system | integumentary-system
+lymphocyte of B lineage,CL:0000945,immune-and-lymphatic-system
+plasmablast,CL:0000980,immune-and-lymphatic-system
+IgA plasma cell,CL:0000987,immune-and-lymphatic-system
+conventional dendritic cell,CL:0000990,immune-and-lymphatic-system
+dermal dendritic cell,CL:0001006,integumentary-system
+"effector CD8-positive, alpha-beta T cell",CL:0001050,immune-and-lymphatic-system
+innate lymphoid cell,CL:0001065,immune-and-lymphatic-system
+group 2 innate lymphoid cell,CL:0001069,immune-and-lymphatic-system
+group 3 innate lymphoid cell,CL:0001071,immune-and-lymphatic-system
+T follicular helper cell,CL:0002038,immune-and-lymphatic-system
+pulmonary alveolar type 2 cell,CL:0002063,immune-and-lymphatic-system | pulmonary-system
+pancreatic acinar cell,CL:0002064,digestive-system
+enterocyte of epithelium of large intestine,CL:0002071,digestive-system
+nodal myocyte,CL:0002072,digestive-system
+interstitial cell of Cajal,CL:0002088,digestive-system
+stromal cell of endometrium,CL:0002255,female-reproductive-system
+type I cell of carotid body,CL:0002292,pulmonary-system
+epithelial cell of proximal tubule,CL:0002306,urinary-system
+keratinocyte stem cell,CL:0002337,integumentary-system
+luminal cell of prostate epithelium,CL:0002340,immune-and-lymphatic-system
+early T lineage precursor,CL:0002425,immune-and-lymphatic-system
+mature CD4 single-positive thymocyte,CL:0002436,immune-and-lymphatic-system
+mature CD8 single-positive thymocyte,CL:0002437,immune-and-lymphatic-system
+hair germinal matrix cell,CL:0002562,integumentary-system
+iris pigment epithelial cell,CL:0002565,immune-and-lymphatic-system
+Schwann cell,CL:0002573,nervous-system
+retinal blood vessel endothelial cell,CL:0002585,immune-and-lymphatic-system
+skin fibroblast,CL:0002620,integumentary-system
+endothelial cell of high endothelial venule,CL:0002652,immune-and-lymphatic-system
+CD8aa(II) thymocyte,CL:0009069,immune-and-lymphatic-system
+medullary thymic epithelial cell type 3,CL:0009073,immune-and-lymphatic-system
+monocyte-derived dendritic cell,CL:0011031,immune-and-lymphatic-system
+sympathetic neuron,CL:0011103,fascia-system | immune-and-lymphatic-system
+telocyte,CL:0017004,fascia-system
+myoepithelial cell of sweat gland,CL:1000417,integumentary-system
+kidney collecting duct epithelial cell,CL:1000454,urinary-system
+melanocyte of skin,CL:1000458,integumentary-system
+kidney distal convoluted tubule epithelial cell,CL:1000849,dental-and-craniofacial-system | endocrine-system | skeletal-system | urinary-system
+macula densa epithelial cell,CL:1000850,urinary-system
+kidney efferent arteriole endothelial cell,CL:1001099,urinary-system
+kidney loop of Henle thick ascending limb epithelial cell,CL:1001106,urinary-system
+kidney loop of Henle thin ascending limb epithelial cell,CL:1001107,urinary-system
+kidney collecting duct principal cell,CL:1001431,urinary-system
+pancreas exocrine glandular cell,CL:1001599,endocrine-system
+central nervous system neuron,CL:2000029,pulmonary-system
+splenic endothelial cell,CL:2000053,immune-and-lymphatic-system
+kidney loop of Henle short descending thin limb epithelial cell,CL:4030012,urinary-system
+"lung resident memory CD8-positive, alpha-beta T cell",CL:4033039,immune-and-lymphatic-system
+onychocyte,CL:4033056,integumentary-system
