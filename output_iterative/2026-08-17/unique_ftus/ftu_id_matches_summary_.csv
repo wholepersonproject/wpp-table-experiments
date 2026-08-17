@@ -1,0 +1,10 @@
+table_name,column,matched_id,label,all_processes,unique_process_count_in_table,total_unique_ids_in_table
+Dental and,Effector/ID,UBERON:0001736,submandibular gland,,0,3
+Dental and,Effector/ID,UBERON:0001831,parotid gland,,0,3
+Dental and,Effector/ID,UBERON:0001832,sublingual gland,,0,3
+Female Reproductive,Effector/ID,UBERON:0002299,alveolus of lung,alveolar ventilation (via tidal volume) increases ~45%,1,1
+Male Reproductive,EffectorLocation/ID,UBERON:0004179,prostate glandular acinus,,0,1
+Nervous System,Effector/ID,UBERON:0001736,submandibular gland,,0,4
+Nervous System,Effector/ID,UBERON:0001831,parotid gland,,0,4
+Nervous System,Effector/ID,UBERON:0001832,sublingual gland,,0,4
+Nervous System,Effector/ID,UBERON:0002299,alveolus of lung,,0,4
