@@ -1,0 +1,74 @@
+LABELS,CL_ID,SOURCE_TABLES
+sperm,CL:0000019,male-reproductive-system
+oocyte,CL:0000023,female-reproductive-system
+odontoblast,CL:0000060,dental-and-craniofacial-system
+osteoblast,CL:0000062,dental-and-craniofacial-system | endocrine-system | male-reproductive-system | skeletal-system
+osteoclast,CL:0000092,dental-and-craniofacial-system | endocrine-system | male-reproductive-system | skeletal-system
+motor neuron,CL:0000100,muscular-system | nervous-system
+sensory neuron | sensory neuron of dorsal root gangli,CL:0000101,nervous-system
+autonomic neuron,CL:0000107,muscular-system | nervous-system
+endothelial cell,CL:0000115,cardiovascular-system | endocrine-system
+astrocyte,CL:0000127,nervous-system
+oligodendrocyte,CL:0000128,nervous-system
+osteocyte,CL:0000137,dental-and-craniofacial-system | endocrine-system | skeletal-system
+parietal cell,CL:0000162,endocrine-system
+chromaffin cell,CL:0000166,endocrine-system
+type B cell of pancreas,CL:0000169,endocrine-system
+pancreatic A cell,CL:0000171,endocrine-system
+pancreatic D cell,CL:0000173,endocrine-system
+luteal cell,CL:0000175,female-reproductive-system
+Leydig cell,CL:0000178,male-reproductive-system
+hepatocyte,CL:0000182,endocrine-system
+smooth muscle cell,CL:0000192,cardiovascular-system | endocrine-system | muscular-system | nervous-system
+auditory hair cell,CL:0000202,dental-and-craniofacial-system | nervous-system
+olfactory receptor cell,CL:0000207,dental-and-craniofacial-system | nervous-system
+photoreceptor cell,CL:0000210,dental-and-craniofacial-system | nervous-system
+Sertoli cell,CL:0000216,male-reproductive-system
+erythrocyte,CL:0000232,female-reproductive-system
+platelet,CL:0000233,endocrine-system
+chief cell of parathyroid gland,CL:0000446,dental-and-craniofacial-system | endocrine-system | skeletal-system
+white adipocyte,CL:0000448,endocrine-system | female-reproductive-system | male-reproductive-system
+granulosa cell,CL:0000501,female-reproductive-system
+theca cell,CL:0000503,female-reproductive-system
+gastrin secreting cell,CL:0000509,endocrine-system
+afferent neuron,CL:0000526,nervous-system
+neuron,CL:0000540,nervous-system
+parafollicular cell,CL:0000570,dental-and-craniofacial-system | endocrine-system | skeletal-system
+vestibular hair cell,CL:0000609,dental-and-craniofacial-system | nervous-system
+striated muscle cell,CL:0000737,endocrine-system
+cardiac muscle cell,CL:0000746,cardiovascular-system | nervous-system
+tanycyte,CL:0002085,endocrine-system
+regular atrial cardiac myocyte,CL:0002129,cardiovascular-system | endocrine-system
+regular ventricular cardiac myocyte,CL:0002131,cardiovascular-system | endocrine-system
+glomerular endothelial cell,CL:0002188,endocrine-system
+stromal cell of endometrium,CL:0002255,female-reproductive-system
+epithelial cell of thyroid gland,CL:0002257,endocrine-system
+P/D1 enteroendocrine cell,CL:0002268,endocrine-system
+pancreatic PP cell,CL:0002275,endocrine-system
+type I enteroendocrine cell,CL:0002277,endocrine-system
+GIP cell,CL:0002278,endocrine-system
+type L enteroendocrine cell,CL:0002279,endocrine-system
+type S enteroendocrine cell,CL:0002281,endocrine-system
+lactocyte,CL:0002325,female-reproductive-system
+type M enteroendocrine cell,CL:0002502,endocrine-system
+fibroblast of dermis,CL:0002551,endocrine-system | female-reproductive-system | male-reproductive-system
+Schwann cell,CL:0002573,nervous-system
+glomerular capillary,CL:0004212,endocrine-system
+skeletal muscle fiber,CL:0008002,endocrine-system | female-reproductive-system | male-reproductive-system | muscular-system | nervous-system
+alpha motor neuron,CL:0008038,nervous-system
+lower motor neuron,CL:0008039,muscular-system | nervous-system
+magnocellular neurosecretory cell,CL:0011003,endocrine-system
+chorionic trophoblast cell,CL:0011101,female-reproductive-system
+juxtaglomerular complex cell,CL:1000618,cardiovascular-system | endocrine-system
+kidney proximal convoluted tubule epithelial cell,CL:1000838,cardiovascular-system | dental-and-craniofacial-system | endocrine-system | skeletal-system
+kidney distal convoluted tubule epithelial cell,CL:1000849,dental-and-craniofacial-system | endocrine-system | skeletal-system
+kidney afferent arteriolar cell,CL:1001006,cardiovascular-system | endocrine-system
+sensory neuron of dorsal root ganglion,CL:1001451,nervous-system
+parvocellular neurosecretory cell,CL:1001505,endocrine-system | female-reproductive-system | male-reproductive-system
+duodenum secretory cell,CL:1001589,endocrine-system
+pancreas exocrine glandular cell,CL:1001599,endocrine-system
+decidual cell,CL:2000002,female-reproductive-system
+placental villous trophoblast,CL:2000060,female-reproductive-system
+direct pathway medium spiny neuron,CL:4023026,nervous-system
+pulmonary capillary endothelial cell,CL:4028001,cardiovascular-system | endocrine-system
+smooth muscle cell of stomach,CL:4047034,nervous-system
