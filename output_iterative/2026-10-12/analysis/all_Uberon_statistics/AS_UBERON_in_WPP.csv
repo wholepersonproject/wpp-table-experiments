@@ -1,0 +1,14 @@
+AS,AS_ID,SOURCE_TABLES
+adenohypophysis | pituitary gland,UBERON:0000007,endocrine-system
+adrenal cortex | zona fasciculata of adrenal gland | zona glomerulosa of adrenal gland | zona reticularis of adrenal gland,UBERON:0001235,endocrine-system
+epithalamus | pineal body,UBERON:0001899,endocrine-system
+epithalamus | pineal body,UBERON:0001905,endocrine-system
+adrenal cortex | zona glomerulosa of adrenal gland,UBERON:0002053,endocrine-system
+adrenal cortex | zona fasciculata of adrenal gland,UBERON:0002054,endocrine-system
+adrenal cortex | zona reticularis of adrenal gland,UBERON:0002055,endocrine-system
+glomerular capillary | kidney | kidney insterstitium,UBERON:0002113,endocrine-system
+adenohypophysis | pituitary gland,UBERON:0002196,endocrine-system
+bone marrow | bone tissue,UBERON:0002371,endocrine-system
+bone marrow | bone tissue,UBERON:0002481,endocrine-system
+blood vessel smooth muscle | smooth muscle cell,UBERON:0004237,endocrine-system
+kidney | kidney insterstitium,UBERON:0005215,endocrine-system
