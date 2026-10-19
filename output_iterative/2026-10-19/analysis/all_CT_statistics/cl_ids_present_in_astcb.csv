@@ -1,0 +1,13 @@
+CL_LABELS,CL_IDs,WPP_SOURCES
+osteoblast,CL:0000062,endocrine-system
+endothelial cell,CL:0000115,endocrine-system
+type B cell of pancreas,CL:0000169,endocrine-system
+pancreatic A cell,CL:0000171,endocrine-system
+pancreatic D cell,CL:0000173,endocrine-system
+hepatocyte,CL:0000182,endocrine-system
+smooth muscle cell,CL:0000192,endocrine-system
+platelet,CL:0000233,endocrine-system
+gastrin secreting cell,CL:0000509,endocrine-system
+pancreatic PP cell,CL:0002275,endocrine-system
+kidney distal convoluted tubule epithelial cell,CL:1000849,endocrine-system
+pancreas exocrine glandular cell,CL:1001599,endocrine-system
